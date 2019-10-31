@@ -1,9 +1,9 @@
 {
-  "name": "img-spy-core",
-  "version": "0.2.0",
+  "name": "watson-core",
+  "version": "0.2.1",
   "description": "",
-  "main": "dist/img-spy-core.js",
-  "module": "dist/img-spy-core.module.js",
+  "main": "dist/watson-core.js",
+  "module": "dist/watson-core.module.js",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
