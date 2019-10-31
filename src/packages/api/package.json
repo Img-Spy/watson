@@ -1,12 +1,12 @@
 {
-  "name": "img-spy-api",
-  "version": "0.2.0",
+  "name": "watson-api",
+  "version": "0.2.1",
   "description": "",
-  "main": "dist/img-spy-api.js",
-  "module": "dist/img-spy-api.module.js",
+  "main": "dist/watson-api.js",
+  "module": "dist/watson-api.module.js",
   "scripts": {
     "build": "rollup -c",
-    "link": "npm link img-spy-core",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typings": "typings/index.d.ts",
@@ -14,12 +14,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "img-spy-core": "^0.1.0",
     "react": "^16.8.6",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "rxjs": "^6.5.1",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "watson-core": "^0.2.2"
   },
   "devDependencies": {
     "electron": "^4.2.9",
