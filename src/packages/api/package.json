@@ -1,6 +1,6 @@
 {
   "name": "watson-api",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "dist/watson-api.js",
   "module": "dist/watson-api.module.js",
