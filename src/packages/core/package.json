@@ -1,11 +1,12 @@
 {
   "name": "watson-core",
-  "version": "0.2.1",
+  "version": "0.2.4",
   "description": "",
   "main": "dist/watson-core.js",
   "module": "dist/watson-core.module.js",
   "scripts": {
     "build": "rollup -c",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typings": "typings/index.d.ts",
