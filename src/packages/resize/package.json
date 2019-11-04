@@ -1,25 +1,24 @@
 {
-  "name": "img-spy-resize",
-  "version": "0.2.0",
+  "name": "watson-resize",
+  "version": "0.2.1",
   "description": "",
-  "main": "dist/img-spy-resize.js",
-  "module": "dist/img-spy-resize.module.js",
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/watson-resize.js",
+  "module": "dist/watson-resize.module.js",
+  "typings": "./typings/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "link": "npm link img-spy-core",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "typings": "./typings/index.d.ts",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "deepcopy": "^2.0.0",
-    "img-spy-core": "^0.1.0",
     "react": "^16.8.6",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
-    "rxjs": "^6.5.1"
+    "rxjs": "^6.5.1",
+    "watson-core": "^0.2.2"
   },
   "devDependencies": {
     "@types/react": "^16.8.15",
