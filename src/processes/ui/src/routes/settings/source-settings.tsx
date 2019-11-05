@@ -1,7 +1,7 @@
 import * as React               from "react";
 
 import { Slider,
-         Slide }                from "img-spy-navigation";
+         Slide }                from "watson-navigation";
 
 import { EditSource }           from "./edit-source";
 import { SourcesList }          from "./sources-list";

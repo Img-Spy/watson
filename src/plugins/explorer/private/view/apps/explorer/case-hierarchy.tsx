@@ -13,7 +13,7 @@ import { fstWatcherSelectors,
          FstParent,
          FstRoot,
          FstItem,
-         FstDirectory }         from "img-spy-modules/fst-watcher";
+         FstDirectory }         from "watson-modules/fst-watcher";
 
 import { explorerActions }      from "@public/modules/explorer";
 import State                    from "@public/state";

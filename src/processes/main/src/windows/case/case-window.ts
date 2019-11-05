@@ -1,6 +1,6 @@
 import { Menu,
          MenuItem }         from "electron";
-import { ImgSpyWindow }     from "../img-spy-window";
+import { WatsonWindow }     from "../watson-window";
 import { IMG_SCAN_MENU }    from "./menu";
 
 
@@ -17,7 +17,7 @@ interface CaseWindowArgs {
     folder: string;
 }
 
-export class CaseWindow extends ImgSpyWindow<CaseWindowArgs> {
+export class CaseWindow extends WatsonWindow<CaseWindowArgs> {
 
     constructor(folder: string, options?: Electron.BrowserWindowConstructorOptions) {
         const newOptions = Object.assign({}, options, DEFAULT_OPTIONS);
@@ -25,18 +25,5 @@ export class CaseWindow extends ImgSpyWindow<CaseWindowArgs> {
         this.args = { folder };
 
         this.setMenu(IMG_SCAN_MENU);
-    }
-
-    protected buildContextMenu() {
-        // const menu = new Menu();
-        // menu.append(new MenuItem({
-        //     label: "Export",
-        //     click: (a, b, c) => {
-        //         console.log(a, b, c);
-        //     }
-        // }));
-        // this.webContents.on("context-menu", () => {
-
-        // });
     }
 }

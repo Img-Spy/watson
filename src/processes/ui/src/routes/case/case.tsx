@@ -9,14 +9,14 @@ import Helmet                   from "react-helmet";
 
 import { PluginApp, 
          PluginView,
-         WindowArgs }           from "img-spy-core";
+         WindowArgs }           from "watson-core";
 import { Router,
          Route,
          LeftBar,
-         navigateSelectors }    from "img-spy-navigation";
-import { WindowEvent }          from "img-spy-material";
+         navigateSelectors }    from "watson-navigation";
+import { WindowEvent }          from "watson-material";
 import { SettingsModel,
-         settingsActions }      from "img-spy-modules/settings";
+         settingsActions }      from "watson-modules/settings";
 
 import { CaseState }            from "store";
 import { viewPlugins }          from "plugins";
@@ -70,7 +70,7 @@ export class CaseClass extends Component<CaseProps> {
             <div className="case flex row full-height">
                 <Helmet>
                     <meta charSet="utf-8"/>
-                    <title>ImgSpy Case - {this.props.title}</title>
+                    <title>Watson Case - {this.props.title}</title>
                 </Helmet>
                 <FstWatcher/>
                 <WindowEvent uuid={this.props.uuid} event="close-settings"

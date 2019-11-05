@@ -1,6 +1,6 @@
 import { FstState, 
-         FstItem }                  from "img-spy-modules/fst-watcher";
-import { TerminalModuleState }      from "img-spy-modules/terminal";
+         FstItem }                  from "watson-modules/fst-watcher";
+import { TerminalModuleState }      from "watson-modules/terminal";
 
 import { ExplorerModuleState }      from "../modules/explorer";
 import { ContextMenuModuleState }   from "../modules/context-menu";

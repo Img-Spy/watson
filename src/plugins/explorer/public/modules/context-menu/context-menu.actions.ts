@@ -1,5 +1,5 @@
 import { Action }                   from "redux-actions";
-import { FstItem }                  from "img-spy-modules/fst-watcher";
+import { FstItem }                  from "watson-modules/fst-watcher";
 
 import { ContextMenuItem,
          ClickEvent }               from "./context-menu.models";

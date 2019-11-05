@@ -12,7 +12,7 @@ function check(argv) {
 
     // Build versions array
     const versions = Object.keys(srcPackage.dependencies)
-        .filter(key => key.startsWith('img-spy-'))
+        .filter(key => key.startsWith('watson-'))
         .map((key) => {
             const depPackagePath = path.resolve(
                 root, "src", srcPackage.dependencies[key].substring(5), 'package.json'
@@ -24,10 +24,10 @@ function check(argv) {
             };
         });
     versions.unshift({
-            name: 'img-spy',
+            name: 'watson',
             version: package.version
         }, {
-            name: 'img-spy-src',
+            name: 'watson-src',
             version: srcPackage.version
         });
 
@@ -53,7 +53,7 @@ function check(argv) {
 function set(argv) {
     // Load package.json files
     const packages = Object.keys(srcPackage.dependencies)
-        .filter(key => key.startsWith('img-spy-'))
+        .filter(key => key.startsWith('watson-'))
         .map((key) => {
             const depPackagePath = path.resolve(
                 root, "src", srcPackage.dependencies[key].substring(5), 'package.json'
@@ -85,7 +85,12 @@ function set(argv) {
     });
     
     // Update versions and store
-    packages.forEach(({filePath, packageJson}) => {
+    packages
+    .filter(({filePath, packageJson}) => {
+        // Skip updating watson-src
+        return packageJson.name !== "watson-src";
+    })
+    .forEach(({filePath, packageJson}) => {
         values.forEach(value => {
             if(value.isGlobal) {
                 packageJson.version = value.version;

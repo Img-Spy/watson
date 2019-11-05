@@ -11,17 +11,18 @@ const intermediateBundle = require('rollup-plugin-intermediate-bundle');
 const silentCircular = require('rollup-plugin-silent-circular');
 const electron = require('rollup-plugin-electron');
 
-const { imgSpyBundleModules } = require('img-spy-core/bundles');
+const { watsonBundleModules } = require('watson-core/bundles');
 
 const pkg = require('./package.json');
 
 const opts = new function Options() {
     this.rootDir = __dirname;
-    this.distDir = process.env.IMGSPY_UI_PATH ||
+    this.distDir = process.env.WATSON_UI_PATH ||
         path.resolve(this.rootDir, "dist");
     this.assets = path.resolve(this.distDir, "assets");
 }();
 
+/////////
 
 module.exports = {
     input:  path.resolve(opts.rootDir, './src/renderer.tsx'),
@@ -48,21 +49,10 @@ module.exports = {
         // FIXME: Remove this externals!!
         ...["chokidar", "element-resize-detector"]
     ],
-    manualChunks: {
-        // 'img-spy':  [
-        //     // Tier 0
-        //     'redux', 'react', 'react-dom', 'react-redux',
-        //     // Tier 1
-        //     'img-spy-core',
-        //     // Tier 2
-        //     'img-spy-api', 'img-spy-navigation',
-        //     'img-spy-modules', 'img-spy-material', 'img-spy-resize'
-        // ]
-    },
     plugins: [
         intermediateBundle.use({
-            path: './js/img-spy.js',
-            modules: imgSpyBundleModules
+            path: './js/watson.js',
+            modules: watsonBundleModules
         }),
         replace({
             exclude: 'node_modules/**',
@@ -88,22 +78,9 @@ module.exports = {
             include: [/node_modules/],
             extensions: ['.js', '.ts', '.tsx'],
             namedExports: {
-                // 'src/node_modules/react/index.js': [
-                //     'useLayoutEffect', 'useEffect', 'useMemo', 'useContext',
-                //     'useReducer', 'useRef',
-
-                //     'Component', 'Children', 'PureComponent', 'PropTypes',
-                //     'createElement', 'Fragment', 'cloneElement', 'StrictMode',
-                //     'createFactory', 'createRef', 'createContext',
-                //     'isValidElement', 'isValidElementType',
-                // ],
                 'src/node_modules/react-is/index.js': [
                     'isValidElementType','isContextConsumer'
-                ],
-                // 'src/node_modules/react-dom/index.js': [
-                //     'unstable_batchedUpdates',
-                //     'render', 'hydrate',
-                // ],
+                ]
             }
         }),
         postcss(),

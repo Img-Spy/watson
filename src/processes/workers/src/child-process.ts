@@ -4,7 +4,7 @@ import { PluginLoader,
          environment,
          QueueRequest,
          ChildProcessHelper,
-         ChildProcessHandler }  from "img-spy-core";
+         ChildProcessHandler }  from "watson-core";
 
 
 export class ChildProcess  {

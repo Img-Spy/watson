@@ -1,14 +1,14 @@
 import { WindowMetadata, 
          ReDuckModule,
          FormModule, 
-         SimpleModule }             from "img-spy-core";
+         SimpleModule }             from "watson-core";
 
-import settingsReducer              from "img-spy-modules/settings";
+import settingsReducer              from "watson-modules/settings";
 
-import { resizeModule }             from "img-spy-resize";
-import { navigateModule }           from "img-spy-navigation";
-import * as settingsWindowModule    from "img-spy-modules/settings-window";
-import * as windowsModule           from "img-spy-modules/windows";
+import { resizeModule }             from "watson-resize";
+import { navigateModule }           from "watson-navigation";
+import * as settingsWindowModule    from "watson-modules/settings-window";
+import * as windowsModule           from "watson-modules/windows";
 
 import globalEpic                   from "./epics";
 import State                        from "./state";

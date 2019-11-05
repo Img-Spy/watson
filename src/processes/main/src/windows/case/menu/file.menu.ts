@@ -1,5 +1,5 @@
 import { ipcMain }      from "electron";
-import { channels }     from "img-spy-core";
+import { channels }     from "watson-core";
 
 export const fileMenu: Electron.MenuItemConstructorOptions = {
     label: "File",

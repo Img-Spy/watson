@@ -5,15 +5,19 @@ const intermediateBundle = require('rollup-plugin-intermediate-bundle');
 const silentCircular = require('rollup-plugin-silent-circular');
 const electron = require('rollup-plugin-electron');
 const path = require('path');
+
+const { watsonBundleModules } = require('watson-core/bundles');
+
 const pkg = require('./package.json');
 
 const opts = new function Options() {
     this.rootDir = __dirname;
-    this.distDir = process.env.IMGSPY_WORKERS_PATH ||
+    this.distDir = process.env.WATSON_WORKERS_PATH ||
         path.resolve(this.rootDir, "dist");
     this.globalSrc = path.resolve(this.rootDir, "../..");
 }();
 
+/////////
 
 module.exports = {
     input: {
@@ -33,78 +37,10 @@ module.exports = {
         ...['path', 'fs', 'crypto', 'child_process'],
         ...['electron']
     ],
-    manualChunks: {
-        // 'img-spy':  [
-        //     // Tier 0
-        //     'redux', 'react', 'react-dom', 'react-redux',
-        //     // Tier 1
-        //     'img-spy-core',
-        //     // Tier 2
-        //     'img-spy-api', 'img-spy-navigation',
-        //     'img-spy-modules', 'img-spy-material', 'img-spy-resize'
-        // ]
-    },
     plugins: [
         intermediateBundle.use({
-            path: './img-spy.js',
-            modules: {
-                // ImgSpy
-                "img-spy-core": {
-                    name: "imgSpyCore",
-                    namedExports: [                
-                        'channels', 'buildMessageType', 'QueuedCluster',
-                        'reducerBuilder', 'environment', 'PluginLoader',
-                        'Sink', 'getFileContent', 'ReDuckModule', 
-                        'SimpleModule', 'FormModule', 'loadArgs',
-                        'ChildProcessHelper', 'ChildProcessHandler',
-                        'apiCodes', 'QueueRequest'
-                    ]
-                },
-                "img-spy-api": {
-                    name: "imgSpyApi",
-                    namedExports: ['apiQuery', 'api']
-                },
-                "img-spy-material": {
-                    name: "imgSpyMaterial",
-                    namedExports: [
-                        'WindowEvent', 'Fa', 'FixedTable', 'DirectoryPicker'
-                    ]
-                },
-                "img-spy-navigation": {
-                    name: "imgSpyNavigation",
-                    namedExports: [
-                        'navigateModule', 'navigateSelectors', 'Route', 
-                        'LeftBar', 'Router', 'navigateUtils', 'Slider', 
-                        'Slide', 
-                    ]
-                },
-                "img-spy-resize": {
-                    name: "imgSpyResize",
-                    namedExports: ['resizeModule']
-                },
-
-                // React
-                "react": {
-                    name: "React",
-                    namedExports: [
-                        'useLayoutEffect', 'useEffect', 'useMemo', 'useContext',
-                        'useReducer', 'useRef',
-    
-                        'Component', 'Children', 'PureComponent', 'PropTypes',
-                        'createElement', 'Fragment', 'cloneElement', 'StrictMode',
-                        'createFactory', 'createRef', 'createContext',
-                        'isValidElement', 'isValidElementType',
-                    ]
-                },
-
-                "react-dom": {
-                    name: "ReactDom",
-                    namedExports: [
-                        'unstable_batchedUpdates',
-                        'render', 'hydrate',
-                    ]
-                }
-            }
+            path: './watson.js',
+            modules: watsonBundleModules
         }),
         typescript({
             typescript: require('typescript'),

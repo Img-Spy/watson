@@ -7,9 +7,9 @@ import { createStore,
 import { createEpicMiddleware, 
          Epic }                 from "redux-observable";
 
-import { loadArgs }             from "img-spy-core";
+import { loadArgs }             from "watson-core";
 
-import { ImgSpyState,
+import { WatsonState,
          epicBuilder,
          reducerBuilder }       from "./state";
 
@@ -48,7 +48,7 @@ function storeBuilder<S>(
     return store;
 };
 
-export default () => storeBuilder<ImgSpyState>(
+export default () => storeBuilder<WatsonState>(
     loadArgs().view,
     reducerBuilder,
     epicBuilder,

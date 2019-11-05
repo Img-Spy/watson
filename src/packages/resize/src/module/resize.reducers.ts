@@ -1,7 +1,7 @@
 import deepCopy                 from "deepcopy";
 
 import { Reducer }              from "redux-actions";
-import { reducerBuilder }       from "img-spy-core";
+import { reducerBuilder }       from "watson-core";
 
 import { ResizeModel,
          UpdateResizePayload,

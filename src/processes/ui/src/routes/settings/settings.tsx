@@ -5,9 +5,9 @@ import { connect }              from "react-redux";
 
 import { Route,
          Router,
-         LeftBar }              from "img-spy-navigation";
-import { settingsActions }      from "img-spy-modules/settings";
-import { windowsActions }       from "img-spy-modules/windows";
+         LeftBar }              from "watson-navigation";
+import { settingsActions }      from "watson-modules/settings";
+import { windowsActions }       from "watson-modules/windows";
 
 import { SettingsState }        from "store";
 

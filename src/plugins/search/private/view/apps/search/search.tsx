@@ -4,7 +4,7 @@ import { bindActionCreators }   from "redux";
 
 import { ResizeModel,
          ResizePanel,
-         resizeActions }        from "img-spy-resize";
+         resizeActions }        from "watson-resize";
 
 import State                    from "@public/state";
 

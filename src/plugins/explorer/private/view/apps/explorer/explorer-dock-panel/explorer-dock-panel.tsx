@@ -6,7 +6,7 @@ import { DockPanel,
 import { connect }              from "react-redux";
 import { bindActionCreators }   from "redux";
 
-import { FileSelector }         from "img-spy-modules/fst-watcher";
+import { FileSelector }         from "watson-modules/fst-watcher";
 
 import { DockPanelModel,
          explorerActions }      from "@public/modules/explorer";

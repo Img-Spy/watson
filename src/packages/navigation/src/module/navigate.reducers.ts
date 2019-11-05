@@ -1,6 +1,6 @@
 import { Reducer }          from "redux-actions";
 import { reducerBuilder,
-         loadArgs }         from "img-spy-core";
+         loadArgs }         from "watson-core";
 
 import { RouterData,
          RouteData,

@@ -8,7 +8,7 @@ import { CONFIG }           from "config";
 const url = url_;
 
 
-export abstract class ImgSpyWindow<T = any> extends BrowserWindow {
+export abstract class WatsonWindow<T = any> extends BrowserWindow {
     public name: string;
     public uuid: string;
     protected args: T;

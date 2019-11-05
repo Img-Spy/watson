@@ -3,7 +3,7 @@ import { Subscription }         from "rxjs";
 import { bindActionCreators }   from "redux";
 import { connect }              from "react-redux";
 
-import { ResizeObservable }     from "img-spy-core";
+import { ResizeObservable }     from "watson-core";
 
 import { TimelineInfo,
          TableSettings,

@@ -1,6 +1,6 @@
 import { screen } from "electron";
 
-import { ImgSpyWindow } from "../img-spy-window";
+import { WatsonWindow } from "../watson-window";
 import { IMG_SCAN_MENU } from "./menu";
 
 const DEFAULT_OPTIONS: Electron.BrowserWindowConstructorOptions = {
@@ -12,7 +12,7 @@ const DEFAULT_OPTIONS: Electron.BrowserWindowConstructorOptions = {
 };
 
 
-export class CaseSelectorWindow extends ImgSpyWindow<undefined> {
+export class CaseSelectorWindow extends WatsonWindow<undefined> {
     constructor(options?: Electron.BrowserWindowConstructorOptions) {
         const { width, height } = screen.getPrimaryDisplay().workAreaSize;
         const newOptions = Object.assign({

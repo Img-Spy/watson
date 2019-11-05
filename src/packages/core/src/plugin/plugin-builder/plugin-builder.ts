@@ -31,24 +31,24 @@ export class PluginBuilder<State> implements Builder<Plugin> {
 
         const plugin: Plugin<State> = {
             info: {
-                name: this.pluginPackage.imgspy.name
+                name: this.pluginPackage.watson.name
             },
             get view() {
                 if(view === undefined) {
-                    if(pluginPackage.imgspy.view === undefined) {
+                    if(pluginPackage.watson.view === undefined) {
                         view = null;
                         return view;
                     }
 
-                    if(pluginPackage.imgspy.view[0] === '/') {
-                        console.warn(`[${pluginPackage.imgspy.name}] Has an absolute main and it's not supported. Skipping.....`);
+                    if(pluginPackage.watson.view[0] === '/') {
+                        console.warn(`[${pluginPackage.watson.name}] Has an absolute main and it's not supported. Skipping.....`);
                         view = null;
                         return view;
                     }
 
-                    const viewPath = path.join(pluginPath, `./${pluginDirName}/${pluginPackage.imgspy.view}`);
+                    const viewPath = path.join(pluginPath, `./${pluginDirName}/${pluginPackage.watson.view}`);
                     if(!fs.existsSync(`${viewPath}`)) {
-                        console.warn(`[${pluginPackage.imgspy.name}] View file '${viewPath}' do not exists. Skipping.....`);
+                        console.warn(`[${pluginPackage.watson.name}] View file '${viewPath}' do not exists. Skipping.....`);
                         view = null;
                         return view;
                     }
@@ -63,20 +63,20 @@ export class PluginBuilder<State> implements Builder<Plugin> {
             },
             get workers() {
                 if(workers === undefined) {
-                    if(pluginPackage.imgspy.workers === undefined) {
+                    if(pluginPackage.watson.workers === undefined) {
                         workers = null;
                         return workers;
                     }
 
-                    if(pluginPackage.imgspy.workers[0] === '/') {
-                        console.warn(`[${pluginPackage.imgspy.name}] Has an absolute main and it's not supported. Skipping.....`);
+                    if(pluginPackage.watson.workers[0] === '/') {
+                        console.warn(`[${pluginPackage.watson.name}] Has an absolute main and it's not supported. Skipping.....`);
                         workers = null;
                         return workers;
                     }
 
-                    const workersPath = path.join(pluginPath, `./${pluginDirName}/${pluginPackage.imgspy.workers}`);
+                    const workersPath = path.join(pluginPath, `./${pluginDirName}/${pluginPackage.watson.workers}`);
                     if(!fs.existsSync(`${workersPath}`)) {
-                        console.warn(`[${pluginPackage.imgspy.name}] View file '${workersPath}' do not exists. Skipping.....`);
+                        console.warn(`[${pluginPackage.watson.name}] View file '${workersPath}' do not exists. Skipping.....`);
                         workers = null;
                         return workers;
                     }

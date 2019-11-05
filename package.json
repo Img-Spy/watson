@@ -1,5 +1,5 @@
 {
-  "name": "img-spy",
+  "name": "watson",
   "version": "0.2.0",
   "description": "A digital forensics application",
   "main": "dist/main.js",
@@ -12,7 +12,7 @@
     "dist-win": "electron-builder build --win --project ./dist"
   },
   "license": "MIT",
-  "repository": "https://github.com/Img-Spy/img-spy",
+  "repository": "https://github.com/Img-Spy/watson",
   "dependencies": {
     "yargs": "^13.3.0"
   },

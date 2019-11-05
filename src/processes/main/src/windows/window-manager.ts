@@ -1,7 +1,7 @@
 import { EventEmitter }         from "events";
 
 import { IContext }             from "../context";
-import { ImgSpyWindow }         from "./img-spy-window";
+import { WatsonWindow }         from "./watson-window";
 
 
 export abstract class WindowManager extends EventEmitter {
@@ -70,7 +70,7 @@ export abstract class WindowManager extends EventEmitter {
         this.ctx.openWindows[name].close();
     }
 
-    public registerWindow(win: ImgSpyWindow) {
+    public registerWindow(win: WatsonWindow) {
         if (this.ctx.openWindows[win.name]) {
             throw new Error(`The window ${win.name} is already open`);
         }
@@ -84,9 +84,10 @@ export abstract class WindowManager extends EventEmitter {
         win.openWindow();
     }
 
-    private unregisterWindow(win: ImgSpyWindow) {
+    private unregisterWindow(win: WatsonWindow) {
         // Recursive unregister windows
-        const children: Array<ImgSpyWindow> = win.getChildWindows() as any;
+        // TODO: Fix types
+        const children: Array<WatsonWindow> = win.getChildWindows() as any;
         children.forEach((child) => this.unregisterWindow(child));
 
         delete this.ctx.openWindows[win.name];
@@ -96,7 +97,7 @@ export abstract class WindowManager extends EventEmitter {
         return !!this.ctx.openWindows[windowName];
     }
 
-    public getWindow(windowName: string): ImgSpyWindow {
+    public getWindow(windowName: string): WatsonWindow {
         return this.ctx.openWindows[windowName];
     }
 

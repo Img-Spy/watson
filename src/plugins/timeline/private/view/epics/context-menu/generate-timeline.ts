@@ -1,12 +1,12 @@
 import { flatMap, map }             from "rxjs/operators";
 import { ofType }                   from "redux-observable";
 
-import { ActionEpic }               from "img-spy-core";
-import { terminalActions }          from "img-spy-modules/terminal";
-import { navigateUtils }            from "img-spy-navigation";
+import { ActionEpic }               from "watson-core";
+import { terminalActions }          from "watson-modules/terminal";
+import { navigateUtils }            from "watson-navigation";
 import { ClickEvent,
          contextMenuOperations,
-         contextMenuTypes }         from "img-spy-plugin-explorer/public/modules/context-menu";
+         contextMenuTypes }         from "watson-plugin-explorer/public/modules/context-menu";
 
 import { contextMenuTags }          from "@public/context-menu";
 import { timelineActions }          from "@public/modules/timeline";

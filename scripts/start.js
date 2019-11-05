@@ -14,12 +14,12 @@ const root = path.resolve(__dirname, "..");
     const tskPath = path.resolve(root, 'src/node_modules/tsk-js');
 
     Object.assign(process.env, {
-        IMGSPY_BUNDLE_FILE: path.resolve(jsPath, "img-spy.js"),
-        IMGSPY_MAIN_PATH: distPath,
-        IMGSPY_UI_PATH: distPath,
-        IMGSPY_WORKERS_PATH: jsPath,
-        IMGSPY_PLUGINS_PATH: pluginsPath,
-        IMGSPY_TSK_PATH: tskPath
+        WATSON_BUNDLE_FILE: path.resolve(jsPath, "watson.js"),
+        WATSON_MAIN_PATH: distPath,
+        WATSON_UI_PATH: distPath,
+        WATSON_WORKERS_PATH: jsPath,
+        WATSON_PLUGINS_PATH: pluginsPath,
+        WATSON_TSK_PATH: tskPath
     });
 
     watch();
@@ -79,25 +79,25 @@ function bundleName({ input, output }) {
 function watch() {
     const watchOptions = prepareWatchers([
         // Packages
-        "img-spy-core",
-        "img-spy-api",
-        "img-spy-material",
-        "img-spy-modules",
-        "img-spy-navigation",
-        "img-spy-resize",
+        "watson-core",
+        "watson-api",
+        "watson-material",
+        "watson-modules",
+        "watson-navigation",
+        "watson-resize",
 
         // Bundles
         require('../src/bundles/rollup.config'),
 
         // Plugins
-        "img-spy-plugin-explorer",
-        "img-spy-plugin-search",
-        "img-spy-plugin-timeline",
+        "watson-plugin-explorer",
+        "watson-plugin-search",
+        "watson-plugin-timeline",
 
         // Processes
-        "img-spy-main",
-        "img-spy-ui",
-        "img-spy-workers"
+        "watson-main",
+        "watson-ui",
+        "watson-workers"
     ]);
     const watcher = rollup.watch(watchOptions);
 

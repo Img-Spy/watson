@@ -6,14 +6,14 @@ import { connect }                  from "react-redux";
 import { Action }                   from "redux-actions";
 
 import { SettingsState }            from "store";
-import { FixedTable }               from "img-spy-material";
+import { FixedTable }               from "watson-material";
 import { Navigator,
-         navigateUtils }            from "img-spy-navigation";
+         navigateUtils }            from "watson-navigation";
 import { DataSource,
-         settingsActions }          from "img-spy-modules/settings";
-import { settingsWindowActions }    from "img-spy-modules/settings-window";
+         settingsActions }          from "watson-modules/settings";
+import { settingsWindowActions }    from "watson-modules/settings-window";
 import { dataSourceTypes,
-         dataSourceFileActions }    from "img-spy-modules/fst-watcher";
+         dataSourceFileActions }    from "watson-modules/fst-watcher";
 
 
 interface InputProps {}

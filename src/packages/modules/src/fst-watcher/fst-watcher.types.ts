@@ -1,13 +1,13 @@
-const ADD            = "imgspy/fst-watcher/ADD";
-const UPDATE         = "imgspy/fst-watcher/UPDATE";
-const UNLINK         = "imgspy/fst-watcher/UNLINK";
-const OPEN           = "imgspy/fst-watcher/OPEN";
-const OPEN_OUT       = "imgspy/fst-watcher/OPEN_OUT";
-const TOGGLE_OPEN    = "imgspy/fst-watcher/TOGGLE_OPEN";
-const ANALYZE        = "imgspy/fst-watcher/HASH";
-const LIST           = "imgspy/fst-watcher/LIST";
-const CONTENT        = "imgspy/fst-watcher/CONTENT";
-const EXPORT         = "imgspy/fst-watcher/EXPORT";
+const ADD            = "watson/fst-watcher/ADD";
+const UPDATE         = "watson/fst-watcher/UPDATE";
+const UNLINK         = "watson/fst-watcher/UNLINK";
+const OPEN           = "watson/fst-watcher/OPEN";
+const OPEN_OUT       = "watson/fst-watcher/OPEN_OUT";
+const TOGGLE_OPEN    = "watson/fst-watcher/TOGGLE_OPEN";
+const ANALYZE        = "watson/fst-watcher/HASH";
+const LIST           = "watson/fst-watcher/LIST";
+const CONTENT        = "watson/fst-watcher/CONTENT";
+const EXPORT         = "watson/fst-watcher/EXPORT";
 
 
 export default {

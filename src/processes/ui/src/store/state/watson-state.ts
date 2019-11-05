@@ -3,4 +3,4 @@ import { CaseState,
          SettingsState }           from "../windows";
 
 
-export type ImgSpyState = CaseState | SelectCaseState | SettingsState;
+export type WatsonState = CaseState | SelectCaseState | SettingsState;

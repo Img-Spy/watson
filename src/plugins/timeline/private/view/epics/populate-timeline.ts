@@ -4,11 +4,11 @@ import { map,
          filter, 
          pluck,
          concatMap,
-         switchMap}                   from "rxjs/operators";
+         switchMap }                from "rxjs/operators";
 import { ofType }                   from "redux-observable";
 
-import { ActionEpic, Sink }         from "img-spy-core";
-import { apiQuery }                 from "img-spy-api";
+import { ActionEpic, Sink }         from "watson-core";
+import { apiQuery }                 from "watson-api";
 
 import { CrtTimelinePayload,
          TimelineItem,

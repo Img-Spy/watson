@@ -4,9 +4,9 @@ import { bindActionCreators }       from "redux";
 import { connect }                  from "react-redux";
 import { Action }                   from "redux-actions";
 
-import { fstWatcherSelectors  }     from "img-spy-modules/fst-watcher";
+import { fstWatcherSelectors  }     from "watson-modules/fst-watcher";
 import { ExportCsvData,
-         exportActions }            from "img-spy-modules/export";
+         exportActions }            from "watson-modules/export";
 
 import { TimelineInfo,
          TimelineItem as TimelineItemModel,

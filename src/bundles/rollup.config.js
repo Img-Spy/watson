@@ -5,11 +5,11 @@ const path = require('path');
 
 const opts = {
     rootPath: __dirname,
-    distFile: process.env.IMGSPY_BUNDLE_FILE || __dirname
+    distFile: process.env.WATSON_BUNDLE_FILE || __dirname
 };
 
 module.exports = {
-    input: path.resolve(opts.rootPath, 'img-spy-bundle.js'),
+    input: path.resolve(opts.rootPath, 'watson-bundle.js'),
     output: [
         {
             file: opts.distFile,

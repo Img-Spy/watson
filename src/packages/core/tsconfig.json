@@ -8,7 +8,10 @@
         "sourceMap": true,
         "lib": [ "es6", "dom" ],
         "jsx": "react",
-        "typeRoots": ["../../node_modules/@types"],
+        "typeRoots": [
+            "../../node_modules/@types",
+            "./node_modules/@types"
+        ],
         "noImplicitReturns": true
     }
 }

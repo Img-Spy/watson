@@ -4,7 +4,7 @@ import { map,
          filter }                   from "rxjs/operators";
 
 import { ActionEpic,
-         EpicObservable }           from "img-spy-core";
+         EpicObservable }           from "watson-core";
 
 import { CrtSearchPayload,
          SearchModuleState }        from "../search.models";

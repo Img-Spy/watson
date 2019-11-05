@@ -1,4 +1,4 @@
-import { DataSource }           from "img-spy-core";
+import { DataSource }           from "watson-core";
 
 import { FstItem,
          FstDirectory,

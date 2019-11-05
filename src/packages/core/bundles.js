@@ -1,44 +1,45 @@
 
 
 module.exports = {
-    imgSpyBundleModules: {
-        // ImgSpy
-        "img-spy-core": {
-            name: "imgSpyCore",
+    watsonBundleModules: {
+        // Watson modules
+        "watson-core": {
+            name: "watsonCore",
             namedExports: [                         
                 'channels', 'buildMessageType', 'QueuedCluster',
                 'reducerBuilder', 'environment', 'PluginLoader',
                 'Sink', 'ReDuckModule', 'SimpleModule', 'FormModule', 
-                'loadArgs', 'WorkerInfo', 'ResizeObservable', 'filter'
+                'loadArgs', 'WorkerInfo', 'ResizeObservable', 'filter',
+                'ChildProcessHelper', 'apiCodes'
             ]
         },
-        "img-spy-api": {
-            name: "imgSpyApi",
+        "watson-api": {
+            name: "watsonApi",
             namedExports: ['apiQuery', 'api', 'api$', 'finalizeMap']
         },
-        "img-spy-material": {
-            name: "imgSpyMaterial",
+        "watson-material": {
+            name: "watsonMaterial",
             namedExports: [
                 'WindowEvent', 'Fa', 'FixedTable', 'DirectoryPicker'
             ]
         },
-        "img-spy-navigation": {
-            name: "imgSpyNavigation",
+        "watson-navigation": {
+            name: "watsonNavigation",
             namedExports: [
                 'navigateModule', 'navigateSelectors', 'Route', 
                 'LeftBar', 'Router', 'navigateUtils', 'Slider', 
                 'Slide',  'Tabs', 'Tab'
             ]
         },
-        "img-spy-resize": {
-            name: "imgSpyResize",
+        "watson-resize": {
+            name: "watsonResize",
             namedExports: [
                 'resizeModule', 'ResizePanel', 'ResizeModel',
                 'resizeActions',
             ]
         },
 
-        // React
+        // React modules
         "react": {
             name: "React",
             namedExports: [

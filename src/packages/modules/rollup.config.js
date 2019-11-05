@@ -52,7 +52,7 @@ module.exports = {
             buildStart(inputOptions) {
                 Object.keys(inputOptions.input).forEach(key => {
                     const source = `{
-                        "name": "img-spy-modules-${key}",
+                        "name": "watson-modules-${key}",
                         "version": "0.1.0",
                         "description": "",
                         "main": "index.js",

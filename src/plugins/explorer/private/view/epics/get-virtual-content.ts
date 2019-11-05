@@ -5,13 +5,13 @@ import { filter,
 import { ofType }                   from "redux-observable";
 
 import { Sink,
-         ActionEpic }               from "img-spy-core";
-import { apiQuery }                 from "img-spy-api";
+         ActionEpic }               from "watson-core";
+import { apiQuery }                 from "watson-api";
 
 import { FstFile,
          fstWatcherTypes,
          fstWatcherActions, 
-         fstWatcherSelectors }      from "img-spy-modules/fst-watcher";
+         fstWatcherSelectors }      from "watson-modules/fst-watcher";
          
 import explorerWorkerInfo           from "@public/worker-info";
 import State                        from "@public/state";

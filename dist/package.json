@@ -1,5 +1,5 @@
 {
-  "name": "img-spy",
+  "name": "watson",
   "version": "0.2.0",
   "main": "main.js",
   "license": "MIT",
@@ -7,11 +7,11 @@
     "name": "Fernando Román García",
     "email": "fernando.roman@upc.edu"
   },
-  "repository": "https://github.com/Img-Spy/img-spy",
+  "repository": "https://github.com/Img-Spy/watson",
   "description": "A digital forensics application",
   "build": {
-    "productName": "ImgSpy",
-    "appId": "org.imgspy.ImgSpy",
+    "productName": "Watson",
+    "appId": "org.imgspy.watson",
     "asar": true,
     "asarUnpack": [
       "./assets/plugins",
@@ -56,7 +56,7 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "img-spy",
+      "owner": "watson",
       "private": false
     }
   },

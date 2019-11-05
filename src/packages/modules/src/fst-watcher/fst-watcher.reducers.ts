@@ -1,6 +1,6 @@
 import * as path                from "path";
 import { Reducer }              from "redux-actions";
-import { reducerBuilder }       from "img-spy-core";
+import { reducerBuilder }       from "watson-core";
 
 import { FstDirectory,
          FstItem,

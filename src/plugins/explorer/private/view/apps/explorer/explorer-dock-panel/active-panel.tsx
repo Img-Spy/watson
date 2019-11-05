@@ -3,7 +3,7 @@ import { Widget }               from "@phosphor/widgets";
 
 import { connect }              from "react-redux";
 import { FstItem,
-         fstWatcherSelectors }  from "img-spy-modules/fst-watcher";
+         fstWatcherSelectors }  from "watson-modules/fst-watcher";
 
 import ExplorerState            from "@public/state";
 

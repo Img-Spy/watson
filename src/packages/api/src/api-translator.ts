@@ -6,7 +6,7 @@ import { OperatorFunction,
 
 import { WorkerInfo,
          FunctionMap, 
-         SettingsModel }        from "img-spy-core";
+         SettingsModel }        from "watson-core";
 
 import api                      from "./api";
 

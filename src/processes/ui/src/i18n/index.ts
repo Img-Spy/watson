@@ -1,5 +1,5 @@
 import T                from "i18n-react";
-import { environment }  from "img-spy-core";
+import { environment }  from "watson-core";
 
 const language = "en";
 const i18nPath = `${environment.rootAppPath}/assets/languages/${language}`;

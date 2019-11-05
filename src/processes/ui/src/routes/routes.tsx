@@ -3,9 +3,9 @@ import { Component }        from "react";
 import { connect }          from "react-redux";
 
 import { Router,
-         Route }            from "img-spy-navigation";
+         Route }            from "watson-navigation";
 
-import { ImgSpyState }      from "store";
+import { WatsonState }      from "store";
 
 
 import { Case }             from "./case";
@@ -30,7 +30,7 @@ class RoutesClass extends Component<RoutesProps, InputProps> {
     private lastRoute: string = undefined;
 
     public componentWillMount() {
-        document.body.classList.add(`img-spy-${this.props.className}`);
+        document.body.classList.add(`watson-${this.props.className}`);
     }
 
     public render() {
@@ -50,7 +50,7 @@ class RoutesClass extends Component<RoutesProps, InputProps> {
 /////////
 
 export const Routes =
-    connect<StateProps, DispatchProps, InputProps, ImgSpyState>(    
+    connect<StateProps, DispatchProps, InputProps, WatsonState>(    
         (state, props) => ({
             theme: state["settings"] ? state["settings"].theme : "dark",
             className: state.navigate.main.path

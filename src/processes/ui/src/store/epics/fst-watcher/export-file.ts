@@ -6,12 +6,12 @@ import { mapTo,
          map}                       from "rxjs/operators";
 import { ofType }                   from "redux-observable";
 
-import { ActionEpic }               from "img-spy-core";
-import { terminalActions }          from "img-spy-modules/terminal";
+import { ActionEpic }               from "watson-core";
+import { terminalActions }          from "watson-modules/terminal";
 import { FstFile,
          FstExportPayload,fstWatcherTypes,
          fstWatcherSelectors,
-         fstWatcherActions }        from "img-spy-modules/fst-watcher";
+         fstWatcherActions }        from "watson-modules/fst-watcher";
 
 import State                        from "./state";
 import { Action }                   from "redux-actions";

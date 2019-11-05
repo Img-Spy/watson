@@ -7,9 +7,9 @@ import { filter,
 import { ofType }                   from "redux-observable";
 import { Action }                   from "redux-actions";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 import { FstItem,
-         fstWatcherTypes }          from "img-spy-modules/fst-watcher";
+         fstWatcherTypes }          from "watson-modules/fst-watcher";
 
 import State                        from "./state";
 

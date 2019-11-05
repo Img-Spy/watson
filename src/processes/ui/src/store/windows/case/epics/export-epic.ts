@@ -4,11 +4,11 @@ import { combineEpics,
 import { switchMap,
          map }                      from "rxjs/operators";
 
-import { ActionEpic }               from "img-spy-core";
-import { terminalActions }          from "img-spy-modules/terminal";
+import { ActionEpic }               from "watson-core";
+import { terminalActions }          from "watson-modules/terminal";
 import { ExportCsvObservable,
          ExportCsvData,
-         exportTypes }              from "img-spy-modules/export";
+         exportTypes }              from "watson-modules/export";
 
 import State                        from "../state";
 

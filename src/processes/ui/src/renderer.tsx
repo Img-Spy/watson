@@ -6,10 +6,10 @@ import { client }           from "electron-connect";
 import { render }           from "react-dom";
 import { Provider }         from "react-redux";
 
-import { Theme }            from "img-spy-core";
-import { api }              from "img-spy-api";
+import { Theme }            from "watson-core";
+import { api }              from "watson-api";
 
-import { settingsActions }  from "img-spy-modules/settings";
+import { settingsActions }  from "watson-modules/settings";
 
 import appStore             from "./store";
 import Routes               from "./routes";

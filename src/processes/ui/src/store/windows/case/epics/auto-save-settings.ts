@@ -2,9 +2,9 @@ import { mapTo,
          debounceTime }             from "rxjs/operators";
 import { ofType }                   from "redux-observable";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 import { settingsActions,
-         settingsTypes }            from "img-spy-modules/settings";
+         settingsTypes }            from "watson-modules/settings";
 
 import State                        from "../state";
 

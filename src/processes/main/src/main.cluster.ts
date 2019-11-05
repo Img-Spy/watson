@@ -1,6 +1,6 @@
 import { QueryObservable,
          QueueResponse,
-         QueuedCluster }    from "img-spy-core";
+         QueuedCluster }    from "watson-core";
 
 
 type ResponseHandler<T> = (response: QueueResponse<T>) => void;

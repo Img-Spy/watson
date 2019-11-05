@@ -1,6 +1,6 @@
 import { remote, MenuItem }     from "electron";
 
-import { FstItem }              from "img-spy-modules/fst-watcher";
+import { FstItem }              from "watson-modules/fst-watcher";
 
 import { ContextMenu,
          ContextMenuItem }      from "@public/modules/context-menu";

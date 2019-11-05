@@ -7,11 +7,11 @@ import { bindActionCreators }   from "redux";
 import { connect }              from "react-redux";
 
 import { Navigator,
-         navigateUtils }        from "img-spy-navigation";
+         navigateUtils }        from "watson-navigation";
 import { DataSourceForm,
          DataSource,
-         settingsActions }      from "img-spy-modules/settings";
-import { Fa }                   from "img-spy-material";
+         settingsActions }      from "watson-modules/settings";
+import { Fa }                   from "watson-material";
 
 import { SettingsState }        from "store";
 

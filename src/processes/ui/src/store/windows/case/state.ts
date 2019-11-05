@@ -1,13 +1,13 @@
 import { FormState }            from "react-redux-form";
 
-import { SettingsModel }        from "img-spy-core";
+import { SettingsModel }        from "watson-core";
 
-import { NavigateModuleState }  from "img-spy-navigation";
-import { ResizeModuleState }    from "img-spy-resize";
+import { NavigateModuleState }  from "watson-navigation";
+import { ResizeModuleState }    from "watson-resize";
 import { FstState,
-         FstItem }              from "img-spy-modules/fst-watcher";
-import { TerminalModel }        from "img-spy-modules/terminal";
-import { WindowsModelState }    from "img-spy-modules/windows";
+         FstItem }              from "watson-modules/fst-watcher";
+import { TerminalModel }        from "watson-modules/terminal";
+import { WindowsModelState }    from "watson-modules/windows";
 
 
 type CaseState =

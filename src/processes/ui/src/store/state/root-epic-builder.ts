@@ -4,10 +4,10 @@ import { combineEpics,
 
 import { loadArgs,
          StartupInfo,
-         WindowMetadata }           from "img-spy-core";
-import { api }                      from "img-spy-api";
+         WindowMetadata }           from "watson-core";
+import { api }                      from "watson-api";
 
-import { ImgSpyState }              from "./img-spy-state";
+import { WatsonState }              from "./watson-state";
 
 import { viewPlugins }              from "plugins";
 import windowsMetadata              from "store/windows";
@@ -15,8 +15,8 @@ import windowsMetadata              from "store/windows";
 
 function buildWindowEpics(
     windowName: string, info: StartupInfo
-): Epic<Action, Action, ImgSpyState>[] {
-    const windowMetadata: WindowMetadata<ImgSpyState> =
+): Epic<Action, Action, WatsonState>[] {
+    const windowMetadata: WindowMetadata<WatsonState> =
         windowsMetadata[windowName];
     const epics = windowMetadata.modules
         .reduce((epics, m, i) => m.mergeEpic(epics, info), [])
@@ -32,7 +32,7 @@ function buildWindowEpics(
 function buildPluginEpics(
     windowName: string,
     info: StartupInfo
-): Epic<Action, Action, ImgSpyState>[] {
+): Epic<Action, Action, WatsonState>[] {
     if(windowName !== "case") return [];
 
     const globalEpics: any[] = viewPlugins
@@ -45,7 +45,7 @@ function buildPluginEpics(
 
 export default function rootEpicBuilder(
     name: string
-): Epic<Action, Action, ImgSpyState, any>  {
+): Epic<Action, Action, WatsonState, any>  {
     const args = loadArgs();
     const info: StartupInfo = { initialSettings: api.loadSettingsSync(), args };
     const epics = [

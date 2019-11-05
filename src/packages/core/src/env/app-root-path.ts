@@ -8,7 +8,7 @@ function appRootPath(): string {
     let dirname = __dirname;
 
     do {
-        const packageFile = path.resolve(dirname, "./imgspy.json");
+        const packageFile = path.resolve(dirname, "./watson.json");
         if(fs.existsSync(packageFile)) {
             break;
         }

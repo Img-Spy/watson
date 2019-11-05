@@ -2,8 +2,8 @@ import * as React           from "react";
 import { Component }        from "react";
 import Helmet               from "react-helmet";
 
-import { api }              from "img-spy-api";
-import { DirectoryPicker }  from "img-spy-material";
+import { api }              from "watson-api";
+import { DirectoryPicker }  from "watson-material";
 
 import T from "i18n";
 
@@ -34,7 +34,7 @@ export class SelectCase extends Component<SelectCaseProps> {
             <div>
                 <Helmet>
                     <meta charSet="utf-8"/>
-                    <title>ImgSpy - Select Case</title>
+                    <title>Watson - Select Case</title>
                 </Helmet>
                 <DirectoryPicker name="casePicker" label={T.translate("select-case.directoryPicker").toString()} ref="casePicker"></DirectoryPicker>
                 <button type="button" onClick={(e) => this.onOpenClick(e)}>{T.translate("select-case.button")}</button>

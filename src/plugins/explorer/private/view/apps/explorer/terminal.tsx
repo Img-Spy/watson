@@ -4,8 +4,8 @@ import { bindActionCreators }   from "redux";
 
 import { terminalActions,
          TerminalModel,
-         TerminalLine }         from "img-spy-modules/terminal";
-import { WindowEvent }          from "img-spy-material";
+         TerminalLine }         from "watson-modules/terminal";
+import { WindowEvent }          from "watson-material";
 
 import State                    from "@public/state";
 

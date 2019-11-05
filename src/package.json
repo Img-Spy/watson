@@ -1,28 +1,24 @@
 {
-  "name": "img-spy-src",
+  "name": "watson-src",
   "version": "0.2.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "rebuild": "electron-rebuild"
   },
   "dependencies": {
-    "img-spy-api": "file:./packages/api",
-    "img-spy-core": "file:./packages/core",
-    "img-spy-main": "file:./processes/main",
-    "img-spy-material": "file:./packages/material",
-    "img-spy-modules": "file:./packages/modules",
-    "img-spy-navigation": "file:./packages/navigation",
-    "img-spy-plugin-explorer": "file:./plugins/explorer",
-    "img-spy-plugin-search": "file:./plugins/search",
-    "img-spy-plugin-timeline": "file:./plugins/timeline",
-    "img-spy-resize": "file:./packages/resize",
-    "img-spy-ui": "file:./processes/ui",
-    "img-spy-workers": "file:./processes/workers",
-    "rollup-plugin-electron": "file:./extra/rollup-plugin-electron",
-    "rollup-plugin-intermediate-bundle": "file:./extra/rollup-plugin-intermediate-bundle",
-    "rollup-plugin-node-gyp": "file:./extra/rollup-plugin-node-gyp",
-    "rollup-plugin-silent-circular": "file:./extra/rollup-plugin-silent-circular"
+    "watson-api": "file:./packages/api",
+    "watson-core": "file:./packages/core",
+    "watson-main": "file:./processes/main",
+    "watson-material": "file:./packages/material",
+    "watson-modules": "file:./packages/modules",
+    "watson-navigation": "file:./packages/navigation",
+    "watson-plugin-explorer": "file:./plugins/explorer",
+    "watson-plugin-search": "file:./plugins/search",
+    "watson-plugin-timeline": "file:./plugins/timeline",
+    "watson-resize": "file:./packages/resize",
+    "watson-ui": "file:./processes/ui",
+    "watson-workers": "file:./processes/workers"
   },
   "devDependencies": {
     "electron": "^4.2.9",
@@ -35,16 +31,18 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.8.15",
     "@types/redux-actions": "^2.6.0",
+    "rollup-plugin-electron": "^0.1.1",
+    "rollup-plugin-intermediate-bundle": "^0.1.1",
+    "rollup-plugin-silent-circular": "^0.1.0",
     "@types/anymatch": "^1.3.1",
     "@types/json2csv": "^4.4.0",
     "@types/react-redux": "^7.0.8",
     "node-sass": "^4.12.0",
     "rollup-plugin-copy": "^3.1.0",
+    "rollup-plugin-node-gyp": "^0.1.0",
     "rollup-plugin-postcss": "^2.0.3",
     "@types/react-table": "^6.7.21",
     "@types/react-dom": "^16.8.4",
-    "@types/react-helmet": "^5.0.8",
-    "eslint": "^5.10.0",
-    "mocha": "^5.2.0"
+    "@types/react-helmet": "^5.0.8"
   }
 }

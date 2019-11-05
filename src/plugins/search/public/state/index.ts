@@ -1,5 +1,5 @@
-import ExplorerState            from "img-spy-explorer-plugin/public/state";
-import { SettingsModuleState }  from "img-spy-modules/settings";
+import ExplorerState            from "watson-plugin-explorer/public/state";
+import { SettingsModuleState }  from "watson-modules/settings";
 
 import { SearchModuleState }    from "../modules/search";
 

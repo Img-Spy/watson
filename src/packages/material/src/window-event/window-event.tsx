@@ -1,7 +1,7 @@
 import { IpcRenderer }          from "electron";
 import * as React               from "react";
 
-import { WindowEventType }      from "img-spy-core";
+import { WindowEventType }      from "watson-core";
 
 
 interface InputProps {

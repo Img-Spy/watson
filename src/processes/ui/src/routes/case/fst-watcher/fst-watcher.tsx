@@ -8,12 +8,12 @@ import { connect }              from "react-redux";
 
 
 import { CaseState }            from "store";
-import { WindowArgs }           from "img-spy-core";
-import { navigateSelectors }    from "img-spy-navigation";
+import { WindowArgs }           from "watson-core";
+import { navigateSelectors }    from "watson-navigation";
 import { FstItem,
          FstDirectory,
          fstWatcherActions,
-         fstWatcherSelectors }  from "img-spy-modules/fst-watcher";
+         fstWatcherSelectors }  from "watson-modules/fst-watcher";
 
 
 interface InputProps {}

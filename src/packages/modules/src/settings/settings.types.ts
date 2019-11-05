@@ -1,8 +1,8 @@
-const APPLY         = "imgspy/settings/APPLY";
-const UPDATE        = "imgspy/settings/UPDATE";
-const UPDATE_THEME  = "imgspy/settings/UPDATE_THEME";
-const UPDATE_SOURCE = "imgspy/settings/UPDATE_SOURCE";
-const DELETE_SOURCE = "imgspy/settings/DELETE_SOURCE";
+const APPLY         = "watson/settings/APPLY";
+const UPDATE        = "watson/settings/UPDATE";
+const UPDATE_THEME  = "watson/settings/UPDATE_THEME";
+const UPDATE_SOURCE = "watson/settings/UPDATE_SOURCE";
+const DELETE_SOURCE = "watson/settings/DELETE_SOURCE";
 
 
 export default {

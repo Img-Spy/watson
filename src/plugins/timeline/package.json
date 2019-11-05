@@ -1,12 +1,12 @@
 {
-  "name": "img-spy-plugin-timeline",
+  "name": "watson-plugin-timeline",
   "version": "0.2.0",
   "description": "",
   "main": "public",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "imgspy": {
+  "watson": {
     "name": "Timeline",
     "view": "js/timeline-view.js",
     "workers": "js/timeline-workers.js"
@@ -25,7 +25,14 @@
     "redux-actions": "^2.2.1",
     "redux-observable": "^1.0.0",
     "rxjs": "^6.0.0",
-    "tsk-js": "^0.5.1"
+    "tsk-js": "^0.5.1",
+    "watson-api": "^0.2.2",
+    "watson-core": "^0.2.4",
+    "watson-material": "^0.2.2",
+    "watson-modules": "^0.2.2",
+    "watson-navigation": "^0.2.1",
+    "watson-resize": "^0.2.1",
+    "watson-plugin-explorer": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",

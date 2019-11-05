@@ -1,1 +1,1 @@
-export { ImgSpyApi }            from "./img-spy-api";
+export { WatsonApi }            from "./watson-api";

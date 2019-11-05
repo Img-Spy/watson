@@ -1,7 +1,7 @@
 import * as React               from "react";
-import { PluginViewBuilder }    from "img-spy-core";
+import { PluginViewBuilder }    from "watson-core";
 
-import { contextMenuModule }    from "img-spy-plugin-explorer/public/modules";
+import { contextMenuModule }    from "watson-plugin-explorer/public/modules";
 
 import { timelineModule }       from "@public/modules";
 import contextMenu              from "@public/context-menu";

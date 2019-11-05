@@ -7,8 +7,8 @@ import { fstWatcherSelectors,
          FstRoot,
          FstItem,
          FstDirectory, 
-         FstDataSource}         from "img-spy-modules/fst-watcher";
-import { FixedTable }           from "img-spy-material";
+         FstDataSource}         from "watson-modules/fst-watcher";
+import { FixedTable }           from "watson-material";
 
 import { explorerActions }      from "@public/modules/explorer";
 import State                    from "@public/state";

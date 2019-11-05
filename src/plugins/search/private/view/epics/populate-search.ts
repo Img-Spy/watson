@@ -8,13 +8,12 @@ import { pluck,
          switchMap, 
          map}                       from "rxjs/operators";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 import { ApiQuery,
          apiQuery,
          finalizeMap, 
          ApiCall,
-         api$}                      from "img-spy-api";
-import { fstWatcherSelectors }      from "img-spy-modules/fst-watcher";
+         api$ }                     from "watson-api";
 
 import { CrtSearchPayload,
          SearchInfo,

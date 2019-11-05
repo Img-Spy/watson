@@ -1,27 +1,17 @@
 {
-  "name": "img-spy-plugin-explorer",
+  "name": "watson-plugin-explorer",
   "version": "0.2.0",
   "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
   "main": "public",
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "imgspy": {
-    "name": "Explorer",
-    "view": "js/explorer-view.js",
-    "workers": "js/explorer-workers.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@phosphor/widgets": "^1.9.0",
-    "img-spy-api": "^0.1.0",
-    "img-spy-core": "^0.1.0",
-    "img-spy-material": "^0.1.0",
-    "img-spy-modules": "^0.1.0",
-    "img-spy-navigation": "^0.1.0",
-    "img-spy-resize": "^0.1.0",
     "immer": "^1.9.3",
     "jquery": "^3.4.1",
     "md5": "^2.2.1",
@@ -36,7 +26,13 @@
     "redux-actions": "^2.6.5",
     "redux-observable": "^1.1.0",
     "rxjs": "^6.0.0",
-    "tsk-js": "^0.5.1"
+    "tsk-js": "^0.5.1",
+    "watson-api": "^0.2.2",
+    "watson-core": "^0.2.4",
+    "watson-material": "^0.2.2",
+    "watson-modules": "^0.2.2",
+    "watson-navigation": "^0.2.1",
+    "watson-resize": "^0.2.1"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",
@@ -45,11 +41,20 @@
     "@types/redux-actions": "^2.6.0",
     "node-sass": "^4.12.0",
     "rollup": "^1.10.1",
+    "rollup-plugin-silent-circular": "^0.1.0",
+    "rollup-plugin-intermediate-bundle": "^0.1.1",
+    "rollup-plugin-electron": "^0.1.1",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-node-gyp": "^0.1.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-typescript2": "^0.21.0",
     "typescript": "^3.4"
+  },
+  "watson": {
+    "name": "Explorer",
+    "view": "js/explorer-view.js",
+    "workers": "js/explorer-workers.js"
   }
 }

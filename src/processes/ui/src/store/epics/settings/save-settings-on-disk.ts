@@ -1,13 +1,12 @@
 import { actions as formActions }   from "react-redux-form";
 import { ofType }                   from "redux-observable";
 import { flatMap, switchMap }       from "rxjs/operators";
-import { Action }                   from "redux-actions";
 
-import { ActionEpic }               from "img-spy-core";
-import { apiQuery }                 from "img-spy-api";
+import { ActionEpic }               from "watson-core";
+import { apiQuery }                 from "watson-api";
 import { ApplySettingsPayload,
-         settingsTypes }            from "img-spy-modules/settings";
-import { windowsActions }           from "img-spy-modules/windows";
+         settingsTypes }            from "watson-modules/settings";
+import { windowsActions }           from "watson-modules/windows";
 
 import State                        from "./state"
 

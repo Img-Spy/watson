@@ -4,7 +4,7 @@ import { map,
 import { ofType }                   from "redux-observable";
 
 import { ActionEpic,
-         EpicObservable }           from "img-spy-core";
+         EpicObservable }           from "watson-core";
 
 import { CrtTimelinePayload,
          TimelineModuleState }      from "../timeline.models";

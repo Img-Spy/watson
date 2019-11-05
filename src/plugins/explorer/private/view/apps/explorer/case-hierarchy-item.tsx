@@ -7,7 +7,7 @@ import { fstWatcherSelectors,
          fstWatcherActions,
          FileSelector,
          FstItem,
-         FstRoot }              from "img-spy-modules/fst-watcher";
+         FstRoot }              from "watson-modules/fst-watcher";
 
 import { explorerActions }      from "@public/modules/explorer";
 import { ContextMenuItem,

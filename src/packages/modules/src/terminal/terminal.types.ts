@@ -1,4 +1,4 @@
-const PUSH_LINE = "imgspy/terminal/PUSH_LINE";
+const PUSH_LINE = "watson/terminal/PUSH_LINE";
 
 export default {
     PUSH_LINE

@@ -1,5 +1,5 @@
-import { ImgSpyApi }    from "./models";
+import { WatsonApi }    from "./models";
 
 //////
 
-export default new ImgSpyApi();
+export default new WatsonApi();

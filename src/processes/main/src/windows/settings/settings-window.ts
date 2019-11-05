@@ -1,4 +1,4 @@
-import { ImgSpyWindow } from "../img-spy-window";
+import { WatsonWindow } from "../watson-window";
 import { IMG_SCAN_MENU } from "./menu";
 
 
@@ -15,7 +15,7 @@ interface SettingsArgs {
     folder: string;
 }
 
-export class SettingsWindow extends ImgSpyWindow<SettingsArgs> {
+export class SettingsWindow extends WatsonWindow<SettingsArgs> {
     constructor(folder: string, parent: Electron.BrowserWindow, options?: Electron.BrowserWindowConstructorOptions) {
         const newOptions = Object.assign({}, options, DEFAULT_OPTIONS, {
             parent: parent

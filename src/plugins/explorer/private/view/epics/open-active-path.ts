@@ -2,10 +2,10 @@ import { map,
          filter }                   from "rxjs/operators";
 import { ofType }                   from "redux-observable";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 
 import { fstWatcherActions,
-         FileSelector }             from "img-spy-modules/fst-watcher";
+         FileSelector }             from "watson-modules/fst-watcher";
 
 import { explorerTypes }            from "@public/modules/explorer";
 import State                        from "@public/state";

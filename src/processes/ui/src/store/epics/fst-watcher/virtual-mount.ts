@@ -1,13 +1,13 @@
 import { filter,
          map }                      from "rxjs/operators";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 import { FstItem,
          FstAddPayload,
          FstDirectory,
          fstWatcherOperations,
          fstWatcherSelectors,
-         fstWatcherActions }        from "img-spy-modules/fst-watcher";
+         fstWatcherActions }        from "watson-modules/fst-watcher";
 
 import State                        from "./state";
 

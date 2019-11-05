@@ -1,7 +1,7 @@
-import { DataSource }   from "img-spy-core";
+import { DataSource }   from "watson-core";
 
 
-export { DataSource }   from "img-spy-core";
+export { DataSource }   from "watson-core";
 
 export interface SettingsWindowModel {
     sources: {

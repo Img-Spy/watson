@@ -1,2 +1,5 @@
+.rpt2_cache
+
 /dist
 /typings
+node_modules

@@ -1,4 +1,4 @@
-import { ContextMenuItem }  from "img-spy-plugin-explorer/public/modules/context-menu";
+import { ContextMenuItem }  from "watson-plugin-explorer/public/modules/context-menu";
 import tags                 from "./tags";
 
 

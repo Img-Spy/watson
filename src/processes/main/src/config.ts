@@ -36,7 +36,7 @@ const DEFAULT_CONFIG = {
     isDevelopment: process.env.NODE_ENV === "development"
 };
 
-class ImgSpyConfig extends ElectronStore<any> {
+class WatsonConfig extends ElectronStore<any> {
     constructor() {
         super({
             defaults: DEFAULT_CONFIG
@@ -85,4 +85,4 @@ class ImgSpyConfig extends ElectronStore<any> {
 }
 
 
-export const CONFIG = new ImgSpyConfig();
+export const CONFIG = new WatsonConfig();

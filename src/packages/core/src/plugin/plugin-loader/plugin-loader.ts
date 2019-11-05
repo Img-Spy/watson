@@ -31,14 +31,14 @@ export default class PluginLoader {
     private loadBuilder<State>(
         dirName: string, pluginPackage: PluginPackage
     ): PluginBuilder<State> {
-        if(!pluginPackage.imgspy) {
-            console.warn(`[${dirName}*] Do not has the imgspy property defined on it's package.json. Skipping.....`);
+        if(!pluginPackage.watson) {
+            console.warn(`[${dirName}*] Do not has the watson property defined on it's package.json. Skipping.....`);
             return undefined;
         }
 
-        if(!pluginPackage.imgspy.name) {
-            console.warn(`[${dirName}*] Do not has the imgspy property defined on it's package.json. Using <directory name>* as name`);
-            pluginPackage.imgspy.name = `${dirName}*`
+        if(!pluginPackage.watson.name) {
+            console.warn(`[${dirName}*] Do not has the watson property defined on it's package.json. Using <directory name>* as name`);
+            pluginPackage.watson.name = `${dirName}*`
         }
 
         return new PluginBuilder<State>(pluginPackage, this.pluginPath, dirName);

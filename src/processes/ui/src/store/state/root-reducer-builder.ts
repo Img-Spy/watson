@@ -4,10 +4,10 @@ import { combineReducers,
 
 import { loadArgs,
          WindowMetadata,
-         StartupInfo }              from "img-spy-core";
-import { api }                      from "img-spy-api";
+         StartupInfo }              from "watson-core";
+import { api }                      from "watson-api";
 
-import { ImgSpyState }              from "./img-spy-state";
+import { WatsonState }              from "./watson-state";
 
 import { viewPlugins }              from "plugins";
 import windowsMetadata              from "store/windows";
@@ -16,7 +16,7 @@ import windowsMetadata              from "store/windows";
 function buildWindowReducerMap(
     windowName: string, info: StartupInfo
 ): ReducersMapObject {
-    const windowMetadata: WindowMetadata<ImgSpyState> = 
+    const windowMetadata: WindowMetadata<WatsonState> = 
         windowsMetadata[windowName];
 
     return windowMetadata.modules
@@ -35,7 +35,7 @@ function buildPluginReducerMap(windowName: string, info: StartupInfo): ReducersM
 
 export default function rootReducerBuilder(
     windowName: string
-): Reducer<ImgSpyState>  {
+): Reducer<WatsonState>  {
     const args = loadArgs();
     const info: StartupInfo = { initialSettings: api.loadSettingsSync(), args };
     const windowReducerMap = buildWindowReducerMap(windowName, info);

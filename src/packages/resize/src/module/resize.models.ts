@@ -1,4 +1,4 @@
-import { ResizeSize }       from "img-spy-core";
+import { ResizeSize }       from "watson-core";
 
 export type ResizeModelMap =  { [name: string]: ResizeModel };
 

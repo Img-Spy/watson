@@ -6,15 +6,15 @@ import { flatMap,
 import { ofType }                   from "redux-observable";
 
 import { Sink,
-         ActionEpic }               from "img-spy-core";
-import { apiQuery }                 from "img-spy-api";
+         ActionEpic }               from "watson-core";
+import { apiQuery }                 from "watson-api";
 
 import { FstDirectory,
          fstWatcherTypes,
          fstWatcherSelectors,
          fstWatcherActions, 
          FstDataSource,
-         FstFile}                   from "img-spy-modules/fst-watcher";
+         FstFile}                   from "watson-modules/fst-watcher";
 
 import workerInfo                   from "@public/worker-info";
 import State                        from "@public/state";

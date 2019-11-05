@@ -6,7 +6,7 @@ import { Form,
 
 import { FstItem,
          FstDataSource,
-         fstWatcherSelectors }  from "img-spy-modules/fst-watcher";
+         fstWatcherSelectors }  from "watson-modules/fst-watcher";
 
 import State                    from "@public/state";
 

@@ -10,7 +10,7 @@ node_modules
 
 # Built files
 dist/*
-!dist/imgspy.json
+!dist/watson.json
 !dist/package.json
 !dist/yarn.lock
 !dist/build

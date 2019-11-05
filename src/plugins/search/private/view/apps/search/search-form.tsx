@@ -6,10 +6,10 @@ import { Form,
          actions as formActions,
          Control }              from "react-redux-form";
 
-import { filter }               from "img-spy-core";
-import { DataSource }           from "img-spy-modules/settings";
+import { filter }               from "watson-core";
+import { DataSource }           from "watson-modules/settings";
 import { FstDirectory,
-         fstWatcherSelectors }  from "img-spy-modules/fst-watcher";
+         fstWatcherSelectors }  from "watson-modules/fst-watcher";
 
 import { CrtSearchPayload,
          SearchFormModel,

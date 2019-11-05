@@ -1,4 +1,4 @@
-const CLOSE_MODAL  = "imgspy/windows/CLOSE_MODAL";
+const CLOSE_MODAL  = "watson/windows/CLOSE_MODAL";
 
 
 export default {

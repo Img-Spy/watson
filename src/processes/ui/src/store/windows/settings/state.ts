@@ -1,12 +1,12 @@
 import { FormState }            from "react-redux-form";
 
 import { SettingsModel, 
-         DataSourceForm }       from "img-spy-core";
-import { NavigateModuleState }  from "img-spy-navigation";
-import { ResizeModuleState }    from "img-spy-resize";
-import { FstState }             from "img-spy-modules/fst-watcher";
-import { SettingsWindowState }  from "img-spy-modules/settings-window";
-import { WindowsModelState }    from "img-spy-modules/windows";
+         DataSourceForm }       from "watson-core";
+import { NavigateModuleState }  from "watson-navigation";
+import { ResizeModuleState }    from "watson-resize";
+import { FstState }             from "watson-modules/fst-watcher";
+import { SettingsWindowState }  from "watson-modules/settings-window";
+import { WindowsModelState }    from "watson-modules/windows";
 
 
 type SettingsState =

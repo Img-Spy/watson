@@ -1,7 +1,7 @@
 import * as fs                      from "fs";
 import TSK, { TskOptions }          from "tsk-js";
 import * as md5File                 from "md5-file";
-import { PluginWorkersBuilder }     from "img-spy-core";
+import { PluginWorkersBuilder }     from "watson-core";
 
 import workerInfo                   from "@public/worker-info";
 

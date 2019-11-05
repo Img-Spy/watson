@@ -5,10 +5,10 @@ import { bindActionCreators }   from "redux";
 import { TabModel,
          Tabs,
          Router,
-         Route }                from "img-spy-navigation";
+         Route }                from "watson-navigation";
 import { fstWatcherActions,
          FstRoot,
-         FstFile }              from "img-spy-modules/fst-watcher";
+         FstFile }              from "watson-modules/fst-watcher";
 
 import State                    from "@public/state";
 

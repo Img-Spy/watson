@@ -1,8 +1,8 @@
-const INITIALIZE = "imgspy/resize/INITIALIZE";
-const UPDATE     = "imgspy/resize/UPDATE";
-const START      = "imgspy/resize/START";
-const MOVE       = "imgspy/resize/MOVE";
-const STOP       = "imgspy/resize/STOP";
+const INITIALIZE = "watson/resize/INITIALIZE";
+const UPDATE     = "watson/resize/UPDATE";
+const START      = "watson/resize/START";
+const MOVE       = "watson/resize/MOVE";
+const STOP       = "watson/resize/STOP";
 
 export default {
     INITIALIZE,

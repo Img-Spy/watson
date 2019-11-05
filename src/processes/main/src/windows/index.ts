@@ -1,1 +1,1 @@
-export { ImgSpyWindowManager } from "./img-spy-window-manager";
+export { WatsonWindowManager } from "./watson-window-manager";

@@ -9,7 +9,7 @@ import { channels,
          ApiRequest, 
          ApiResponse,
          SettingsModel,
-         FunctionMap }          from "img-spy-core";
+         FunctionMap }          from "watson-core";
 
 
 export class ImgSpyApi {

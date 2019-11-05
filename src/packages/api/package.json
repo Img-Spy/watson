@@ -19,7 +19,7 @@
     "redux": "^4.0.1",
     "rxjs": "^6.5.1",
     "uuid": "^3.3.2",
-    "watson-core": "^0.2.2"
+    "watson-core": "^0.2.4"
   },
   "devDependencies": {
     "electron": "^4.2.9",

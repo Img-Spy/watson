@@ -9,7 +9,7 @@ import { FstRoot,
          fstWatcherSelectors,
          fstWatcherActions,
          FstItem, 
-         AddressTypes }         from "img-spy-modules/fst-watcher";
+         AddressTypes }         from "watson-modules/fst-watcher";
 
 import { explorerActions }      from "@public/modules/explorer";
 import State                    from "@public/state";

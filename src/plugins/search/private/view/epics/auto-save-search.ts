@@ -4,9 +4,9 @@ import { map,
          filter,
          debounceTime }             from "rxjs/operators";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 
-import { settingsActions }          from "img-spy-modules/settings";
+import { settingsActions }          from "watson-modules/settings";
 
 import State                        from "@public/state";
 

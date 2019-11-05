@@ -2,8 +2,8 @@ import { Action }               from "redux-actions";
 import { ofType }               from "redux-observable";
 import { map, filter }          from "rxjs/operators";
 
-import { ActionEpic }           from "img-spy-core";
-import { apiQuery }             from "img-spy-api";
+import { ActionEpic }           from "watson-core";
+import { apiQuery }             from "watson-api";
 
 import { WindowsModelState }    from "../windows.models";
 import types                    from "../windows.types";

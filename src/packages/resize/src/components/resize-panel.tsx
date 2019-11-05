@@ -7,7 +7,7 @@ import { sampleTime,
 import { connect }                      from "react-redux";
 import { bindActionCreators }           from "redux";
 
-import { ResizeObservable }             from "img-spy-core";
+import { ResizeObservable }             from "watson-core";
 
 import { ResizeSize,
          ResizeItemModel,

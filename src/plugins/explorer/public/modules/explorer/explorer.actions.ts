@@ -1,5 +1,5 @@
 import { Action }               from "redux-actions";
-import { FileSelector }         from "img-spy-modules/fst-watcher";
+import { FileSelector }         from "watson-modules/fst-watcher";
 
 import { DockPanelModel }       from "./explorer.models";
 import types                    from "./explorer.types";

@@ -1,7 +1,7 @@
-import { ImgSpyWindow } from "./windows/img-spy-window";
+import { WatsonWindow } from "./windows/watson-window";
 
 export interface IContext {
     openWindows: {
-        [name: string]: ImgSpyWindow
+        [name: string]: WatsonWindow
     };
 }

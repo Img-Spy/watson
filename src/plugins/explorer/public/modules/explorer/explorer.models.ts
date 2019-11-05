@@ -1,5 +1,5 @@
 // import { Widget } from "@phosphor/widgets";
-import { FileSelector } from "img-spy-modules/fst-watcher";
+import { FileSelector } from "watson-modules/fst-watcher";
 
 export { FileSelector };
 

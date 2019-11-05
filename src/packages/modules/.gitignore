@@ -1,3 +1,6 @@
+.rpt2_cache
+node_modules
+
 /export
 /fst-watcher
 /settings

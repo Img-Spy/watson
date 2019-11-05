@@ -1,5 +1,5 @@
 import * as React               from "react";
-import { PluginViewBuilder }    from "img-spy-core";
+import { PluginViewBuilder }    from "watson-core";
 
 import { searchModule }         from "@public/modules";
 import State                    from "@public/state";

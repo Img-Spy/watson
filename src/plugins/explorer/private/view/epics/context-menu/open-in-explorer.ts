@@ -1,9 +1,9 @@
 import { flatMap }                  from "rxjs/operators";
 import { ofType }                   from "redux-observable";
 
-import { ActionEpic }               from "img-spy-core";
-import { fstWatcherActions }        from "img-spy-modules/fst-watcher";
-import { terminalActions }          from "img-spy-modules/terminal";
+import { ActionEpic }               from "watson-core";
+import { fstWatcherActions }        from "watson-modules/fst-watcher";
+import { terminalActions }          from "watson-modules/terminal";
 
 import { ClickEvent,
          contextMenuOperations,

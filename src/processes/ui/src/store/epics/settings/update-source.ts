@@ -2,9 +2,9 @@ import { actions as formActions }   from "react-redux-form";
 import { ofType }                   from "redux-observable";
 import { mapTo }                    from "rxjs/operators";
 
-import { ActionEpic }               from "img-spy-core";
+import { ActionEpic }               from "watson-core";
 import { DataSource, 
-         settingsTypes }            from "img-spy-modules/settings";
+         settingsTypes }            from "watson-modules/settings";
 
 import State                        from "./state"
 

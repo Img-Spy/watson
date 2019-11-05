@@ -3,7 +3,7 @@ import { SettingsModel,
          DataSourceFileAction,
          DataSourceForm,
          DataSourceType,
-         Theme }                from "img-spy-core";
+         Theme }                from "watson-core";
 
 
 export interface ApplySettingsPayload {

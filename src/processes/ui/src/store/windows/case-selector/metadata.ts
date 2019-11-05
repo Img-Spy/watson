@@ -1,8 +1,8 @@
 import { WindowMetadata,
-         ReDuckModule }         from "img-spy-core";
+         ReDuckModule }         from "watson-core";
 
-import { resizeModule }         from "img-spy-resize";
-import { navigateModule }       from "img-spy-navigation";
+import { resizeModule }         from "watson-resize";
+import { navigateModule }       from "watson-navigation";
 
 import globalEpic               from "./epics";
 import State                    from "./state";

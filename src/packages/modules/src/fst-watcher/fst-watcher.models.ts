@@ -1,5 +1,5 @@
 import { DataSourceType,
-         Partition }   from "img-spy-core";
+         Partition }   from "watson-core";
 
 
 export const dataSourceTypes = {

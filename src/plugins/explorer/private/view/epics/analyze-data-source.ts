@@ -8,14 +8,14 @@ import { ofType }                   from "redux-observable";
 
 import { ActionEpic,
          EpicObservable,
-         Sink }                     from "img-spy-core";
-import { apiQuery }                 from "img-spy-api";
-import { terminalActions }          from "img-spy-modules/terminal";
+         Sink }                     from "watson-core";
+import { apiQuery }                 from "watson-api";
+import { terminalActions }          from "watson-modules/terminal";
 import { FstAddPayload,
          FstDataSource,
          fstWatcherOperations,
          fstWatcherTypes,
-         fstWatcherActions }        from "img-spy-modules/fst-watcher";
+         fstWatcherActions }        from "watson-modules/fst-watcher";
 
 import workerInfo                   from "@public/worker-info";
 import State                        from "@public/state";

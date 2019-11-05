@@ -7,20 +7,20 @@ import * as path                from "path";
 import { channels,
          ApiRequest,
          SettingsModel,
-         ApiResponse }          from "img-spy-core";
+         ApiResponse }          from "watson-core";
 
 import { CONFIG }               from "config";
 
-import { ImgSpyWindowManager }  from "../windows";
+import { WatsonWindowManager }  from "../windows";
 import { MainCluster }          from "../main.cluster";
 
 
-export class ImgSpyApi {
-    private windowManager: ImgSpyWindowManager;
+export class WatsonApi {
+    private windowManager: WatsonWindowManager;
     private mainCluster: MainCluster<any>;
 
     constructor() {
-        this.windowManager = new ImgSpyWindowManager(app);
+        this.windowManager = new WatsonWindowManager(app);
 
         this.mainCluster = new MainCluster();
         this.mainCluster.start();

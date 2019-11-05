@@ -11,15 +11,15 @@ const intermediateBundle = require('rollup-plugin-intermediate-bundle');
 const nodeGyp = require('rollup-plugin-node-gyp');
 const silentCircular = require('rollup-plugin-silent-circular');
 
-const { imgSpyBundleModules } = require('img-spy-core/bundles');
+const { watsonBundleModules } = require('watson-core/bundles');
 
 const pkg = require('./package.json');
 
 const opts = new function Options() {
     this.rootDir = __dirname;
-    this.pluginsDir = process.env.IMGSPY_PLUGINS_PATH ||
+    this.pluginsDir = process.env.WATSON_PLUGINS_PATH ||
         path.resolve(this.rootDir, 'dist');
-    this.tskDir = process.env.IMGSPY_TSK_PATH ||
+    this.tskDir = process.env.WATSON_TSK_PATH ||
         path.resolve(this.rootDir, 'node_modules/tsk-js/');
 
     this.distDir = path.resolve(this.pluginsDir, "search");
@@ -48,8 +48,8 @@ module.exports = {
     manualChunks: {},
     plugins: [
         intermediateBundle.use({
-            path: '../../../js/img-spy.js',
-            modules: imgSpyBundleModules
+            path: '../../../js/watson.js',
+            modules: watsonBundleModules
         }),
         copy({
             targets: [

@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@babel/runtime@^7.3.1", "@babel/runtime@^7.4.3":
+"@babel/runtime@^7.4.3":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.4.tgz#dc2e34982eb236803aa27a07fea6857af1b9171d"
   integrity sha512-w0+uT71b6Yi7i5SE0co4NioIpSYS6lLiXvCzWzGSKvpK5vdQtCbICHMj+gbAKAOtxiV6HsVh/MBdaF9EQ6faSg==
@@ -125,11 +125,6 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
-
-batch-processor@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/batch-processor/-/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
-  integrity sha1-dclcMrdI4IUNEMKxaPa9vpiRrOg=
 
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
@@ -345,30 +340,14 @@ electron-download@^4.1.0:
     semver "^5.4.1"
     sumchecker "^2.0.2"
 
-electron@^4.0.3:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-4.1.5.tgz#d1873147d5be36ab0c8bb9db3a54297a82ee8fef"
-  integrity sha512-0VZzUd4vZaUeSLdxJI/XMrMnPN7AROjPFZOiNgZZkYRUUEjGHfaSAbCJyxuXtii52KGhzGL0JgW0q5QmQ3ykKQ==
+electron@^4.2.9:
+  version "4.2.12"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-4.2.12.tgz#8e8926a6a6654cde5eb0612952fed98a56941875"
+  integrity sha512-EES8eMztoW8gEP5E4GQLP8slrfS2jqTYtHbu36mlu3k1xYAaNPyQQr6mCILkYxqj4l3la4CT2Vcs89CUG62vcQ==
   dependencies:
     "@types/node" "^10.12.18"
     electron-download "^4.1.0"
     extract-zip "^1.0.3"
-
-electron@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-5.0.0.tgz#d8352e2c9625b3be0112ce0c1bf5c9b6f692557e"
-  integrity sha512-++emIe4vLihiYiAVL+E8DT5vSNVFEIuQCRxA+VfpDRVBcog85UB28vi4ogRmMOK3UffzKdWV6e1jqp3T0KpBoA==
-  dependencies:
-    "@types/node" "^10.12.18"
-    electron-download "^4.1.0"
-    extract-zip "^1.0.3"
-
-element-resize-detector@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/element-resize-detector/-/element-resize-detector-1.2.0.tgz#63344fd6f4e5ecff6f018d027e17b281fd4fa338"
-  integrity sha512-UmhNB8sIJVZeg56gEjgmMd6p37sCg8j8trVW0LZM7Wzv+kxQ5CnRHcgRKBTB/kFUSn3e7UP59kl2V2U8Du1hmg==
-  dependencies:
-    batch-processor "1.0.0"
 
 env-paths@^1.0.0:
   version "1.0.0"
@@ -624,23 +603,6 @@ icepick@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/icepick/-/icepick-1.3.0.tgz#e4942842ed8f9ee778d7dd78f7e36627f49fdaef"
   integrity sha1-5JQoQu2Pnud419149+NmJ/Sf2u8=
-
-img-spy-core@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/img-spy-core/-/img-spy-core-0.1.0.tgz#88923257b83c54b01f61c6b7deb9a59c6b288630"
-  integrity sha512-Lq3DTlaBz5Y1QbRBZSv2s1y/2ajbCJUbJIR/abEs5P3LcdTO0OdN/U6PgQFVjNH/7UM0aa6Vb9ctpnt/SulD4w==
-  dependencies:
-    electron "^4.0.3"
-    element-resize-detector "^1.2.0"
-    react "^16.7.0"
-    react-dom "^16.7.0"
-    react-redux "^6.0.0"
-    react-redux-form "^1.16.12"
-    redux "^4.0.1"
-    redux-actions "^2.6.4"
-    redux-observable "^1.0.0"
-    rxjs "^6.4.0"
-    uuid "^3.3.2"
 
 indent-string@^2.1.0:
   version "2.1.0"
@@ -1235,17 +1197,17 @@ rc@^1.2.1:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.7.0:
-  version "16.8.6"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
-  integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
+react-dom@^16.8.6:
+  version "16.11.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.11.0.tgz#7e7c4a5a85a569d565c2462f5d345da2dd849af5"
+  integrity sha512-nrRyIUE1e7j8PaXSPtyRKtz+2y9ubW/ghNgqKFHHAHaeP0fpF5uXR+sq8IMRHC+ZUxw7W9NyCDTBtwWxvkb0iA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.13.6"
+    scheduler "^0.17.0"
 
-react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.2, react-is@^16.8.6:
+react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
@@ -1255,10 +1217,10 @@ react-native-segmented-control-tab@^3.2.1:
   resolved "https://registry.yarnpkg.com/react-native-segmented-control-tab/-/react-native-segmented-control-tab-3.4.0.tgz#8e9f32cda2909deb0f45e12eed5a4827da221804"
   integrity sha512-TJXzSCr5ZeXAzSkjPUjfcy1B9bn5c7qnjCFf2d5YeYmR+wjU9bso2Z0A8mcqmXeMSA6Swc+HY/YBVNFlFzYpEQ==
 
-react-redux-form@^1.16.12:
-  version "1.16.13"
-  resolved "https://registry.yarnpkg.com/react-redux-form/-/react-redux-form-1.16.13.tgz#2af3428e79be8cd690fec98bf9e5a916f0c33303"
-  integrity sha512-/V5jeEMzzNzhWev8bwkWBhLxamnZxcryuKVTv3zVGqTckDWnqYuicC3s4wCrzdKRUdvg4LaCEsCdpDDTjahBvw==
+react-redux-form@^1.16.13:
+  version "1.16.14"
+  resolved "https://registry.yarnpkg.com/react-redux-form/-/react-redux-form-1.16.14.tgz#0c3b14a2a5144d1acc38a3645d8a89661a3b37dd"
+  integrity sha512-exd8FoWwJRQynjnYqCLmcbwcqgRPyU+qiKmTA7/T8qlNgyqgmbAgkYNe9NG9FYb5oLgHAtx5vDhVEpje888lIA==
   dependencies:
     icepick "^1.1.0"
     invariant "~2.2.1"
@@ -1267,18 +1229,6 @@ react-redux-form@^1.16.12:
     prop-types "^15.5.6"
     react-native-segmented-control-tab "^3.2.1"
     shallow-compare "^1.2.1"
-
-react-redux@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-6.0.1.tgz#0d423e2c1cb10ada87293d47e7de7c329623ba4d"
-  integrity sha512-T52I52Kxhbqy/6TEfBv85rQSDz6+Y28V/pf52vDWs1YRXG19mcFOGfHnY2HsNFHyhP+ST34Aih98fvt6tqwVcQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    hoist-non-react-statics "^3.3.0"
-    invariant "^2.2.4"
-    loose-envify "^1.4.0"
-    prop-types "^15.7.2"
-    react-is "^16.8.2"
 
 react-redux@^7.0.3:
   version "7.0.3"
@@ -1292,7 +1242,7 @@ react-redux@^7.0.3:
     prop-types "^15.7.2"
     react-is "^16.8.6"
 
-react@^16.7.0, react@^16.8.6:
+react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -1355,7 +1305,7 @@ reduce-reducers@^0.4.3:
   resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.4.3.tgz#8e052618801cd8fc2714b4915adaa8937eb6d66c"
   integrity sha512-+CNMnI8QhgVMtAt54uQs3kUxC3Sybpa7Y63HR14uGLgI9/QR5ggHvpxwhGGe3wmx5V91YwqQIblN9k5lspAmGw==
 
-redux-actions@^2.6.4:
+redux-actions@^2.6.5:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/redux-actions/-/redux-actions-2.6.5.tgz#bdca548768ee99832a63910c276def85e821a27e"
   integrity sha512-pFhEcWFTYNk7DhQgxMGnbsB1H2glqhQJRQrtPb96kD3hWiZRzXHwwmFPswg6V2MjraXRXWNmuP9P84tvdLAJmw==
@@ -1366,10 +1316,10 @@ redux-actions@^2.6.4:
     reduce-reducers "^0.4.3"
     to-camel-case "^1.0.0"
 
-redux-observable@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/redux-observable/-/redux-observable-1.1.0.tgz#323a8fe53e89fdb519be2807b55f08e21c13e6f1"
-  integrity sha512-G0nxgmTZwTK3Z3KoQIL8VQu9n0YCUwEP3wc3zxKQ8zAZm+iYkoZvBqAnBJfLi4EsD1E64KR4s4jFH/dFXpV9Og==
+redux-observable@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/redux-observable/-/redux-observable-1.2.0.tgz#ff51b6c6be2598e9b5e89fc36639186bb0e669c7"
+  integrity sha512-yeR90RP2WzZzCxxnQPlh2uFzyfFLsfXu8ROh53jGDPXVqj71uNDMmvi/YKQkd9ofiVoO4OYb1snbowO49tCEMg==
 
 redux@^4.0.1:
   version "4.0.1"
@@ -1514,7 +1464,7 @@ rollup@^1.10.1:
     "@types/node" "^11.13.5"
     acorn "^6.1.1"
 
-rxjs@^6.4.0, rxjs@^6.5.1:
+rxjs@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.1.tgz#f7a005a9386361921b8524f38f54cbf80e5d08f4"
   integrity sha512-y0j31WJc83wPu31vS1VlAFW5JGrnGC+j+TtGAa1fRQphy48+fDYiDmX8tjGloToEsMkxnouOg/1IzXGKkJnZMg==
@@ -1542,6 +1492,14 @@ scheduler@^0.13.6:
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
   integrity sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.17.0.tgz#7c9c673e4ec781fac853927916d1c426b6f3ddfe"
+  integrity sha512-7rro8Io3tnCPuY4la/NuI5F2yfESpnfZyT6TtkXnSWVkcu0BCDJ+8gk5ozUaFaxpIyNuWAPXrH0yFcSi28fnDA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -1927,6 +1885,21 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+watson-core@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.2.tgz#4ddc2a6be72850c10574812f91e1ed1d9d9aa921"
+  integrity sha512-8McVAsiUTpUpgCaxy+ob1G75BxHaqcogua2cYedEmRl+UdtdBQI/rjRKs2v9JRmeJdXftPj8v66lfV/VB22jPg==
+  dependencies:
+    react "^16.8.6"
+    react-dom "^16.8.6"
+    react-redux "^7.0.3"
+    react-redux-form "^1.16.13"
+    redux "^4.0.1"
+    redux-actions "^2.6.5"
+    redux-observable "^1.1.0"
+    rxjs "^6.5.1"
+    uuid "^3.3.2"
 
 xtend@~2.1.1:
   version "2.1.2"

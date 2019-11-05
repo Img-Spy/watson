@@ -1,6 +1,6 @@
 import { Observable, Observer }     from "rxjs";
 import TSK, { TskOptions }          from "tsk-js";
-import { PluginWorkersBuilder }     from "img-spy-core";
+import { PluginWorkersBuilder }     from "watson-core";
 
 import workerInfo, 
        { SearchResult }             from "@public/worker-info";

@@ -6,7 +6,7 @@ import { SettingsWindow }       from "./settings";
 import { WindowManager }        from "./window-manager";
 
 
-export class ImgSpyWindowManager extends WindowManager {
+export class WatsonWindowManager extends WindowManager {
     public folder: string;
 
     constructor(app) {

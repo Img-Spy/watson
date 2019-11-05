@@ -1,6 +1,6 @@
 import { FstType, 
          AddressTypes, 
-         FstItem }          from "img-spy-modules/fst-watcher";
+         FstItem }          from "watson-modules/fst-watcher";
 
 
 export interface ContextMenuItem {

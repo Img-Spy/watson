@@ -6,7 +6,7 @@ import { map,
 import { ofType,
          Epic }                     from "redux-observable";
 
-import { fstWatcherActions }        from "img-spy-modules/fst-watcher";
+import { fstWatcherActions }        from "watson-modules/fst-watcher";
 
 import State                        from "@public/state";
 

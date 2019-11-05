@@ -1,4 +1,4 @@
-import { WorkerInfo }       from "img-spy-core";
+import { WorkerInfo }       from "watson-core";
 
 import BackgroundMethods    from "./methods";
 

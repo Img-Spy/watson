@@ -1,4 +1,4 @@
-const EXPORT_CSV        = "imgspy/export/CSV";
+const EXPORT_CSV        = "watson/export/CSV";
 
 
 export default {
