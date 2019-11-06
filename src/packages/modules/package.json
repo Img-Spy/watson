@@ -1,18 +1,16 @@
 {
   "name": "watson-modules",
-  "version": "0.2.2",
-  "description": "",
+  "version": "0.2.3",
+  "description": "It contains the state management for Watson UI",
+  "license": "MIT",
   "main": "dist/watson-modules.js",
   "module": "dist/watson-modules.module.js",
+  "types": "typings/modules.d.ts",
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "types": "typings/modules.d.ts",
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "anymatch": "^3.0.1",
     "immer": "^3.1.1",
@@ -22,8 +20,8 @@
     "redux": "^4.0.1",
     "redux-observable": "^1.1.0",
     "rxjs": "^6.5.1",
-    "watson-api": "^0.2.2",
-    "watson-core": "^0.2.4"
+    "watson-api": "^0.2.3",
+    "watson-core": "^0.2.5"
   },
   "devDependencies": {
     "@types/anymatch": "^1.3.1",
