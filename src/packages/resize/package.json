@@ -1,8 +1,7 @@
 {
   "name": "watson-resize",
-  "version": "0.2.1",
-  "description": "",
-  "keywords": [],
+  "version": "0.2.2",
+  "description": "Adds React componets that can be resized. Used by Watson UI",
   "license": "MIT",
   "main": "dist/watson-resize.js",
   "module": "dist/watson-resize.module.js",
@@ -18,7 +17,7 @@
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "rxjs": "^6.5.1",
-    "watson-core": "^0.2.4"
+    "watson-core": "^0.2.5"
   },
   "devDependencies": {
     "@types/react": "^16.8.15",
