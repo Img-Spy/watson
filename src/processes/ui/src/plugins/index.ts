@@ -8,5 +8,8 @@ const pluginsPath = path.join(environment.rootAppPath, "./assets/plugins");
 const pluginLoader = new PluginLoader(pluginsPath);
 
 const viewPlugins = pluginLoader.loadAll<WatsonState>().filter(p => !!p.view);
+viewPlugins.forEach((plugin) => {
+    console.log(`Loading plugin "${plugin.info.name}"`);
+})
 
 export { viewPlugins }

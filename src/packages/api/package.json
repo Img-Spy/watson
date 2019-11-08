@@ -1,25 +1,23 @@
 {
   "name": "watson-api",
-  "version": "0.2.2",
-  "description": "",
+  "version": "0.2.3",
+  "description": "It specifies the API between renderer and main process",
+  "license": "MIT",
   "main": "dist/watson-api.js",
   "module": "dist/watson-api.module.js",
+  "typings": "typings/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "typings": "typings/index.d.ts",
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "react": "^16.8.6",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "rxjs": "^6.5.1",
     "uuid": "^3.3.2",
-    "watson-core": "^0.2.4"
+    "watson-core": "^0.2.5"
   },
   "devDependencies": {
     "electron": "^4.2.9",

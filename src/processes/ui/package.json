@@ -26,12 +26,12 @@
     "redux": "^4.0.1",
     "spawn-sync": "^2.0.0",
     "utf-8-validate": "^5.0.2",
-    "watson-api": "^0.2.2",
-    "watson-core": "^0.2.4",
-    "watson-material": "^0.2.2",
-    "watson-modules": "^0.2.2",
-    "watson-navigation": "^0.2.1",
-    "watson-resize": "^0.2.1"
+    "watson-api": "^0.2.3",
+    "watson-core": "^0.2.5",
+    "watson-material": "^0.2.3",
+    "watson-modules": "^0.2.3",
+    "watson-navigation": "^0.2.2",
+    "watson-resize": "^0.2.2"
   },
   "devDependencies": {
     "@types/react": "^16.8.15",

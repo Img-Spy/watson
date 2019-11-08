@@ -1886,10 +1886,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-watson-core@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.2.tgz#4ddc2a6be72850c10574812f91e1ed1d9d9aa921"
-  integrity sha512-8McVAsiUTpUpgCaxy+ob1G75BxHaqcogua2cYedEmRl+UdtdBQI/rjRKs2v9JRmeJdXftPj8v66lfV/VB22jPg==
+watson-core@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.4.tgz#86c190acafa95f6e6f18d395104272025f0efe7d"
+  integrity sha512-Z0taKDhDL9pGhJCD4WEN+cXqM40oACVsNmUkBUPcD7Hshh9F7Kglo3t6EJ1HHHly0LMsdZK3wOqLLnxHL7a2tw==
   dependencies:
     react "^16.8.6"
     react-dom "^16.8.6"

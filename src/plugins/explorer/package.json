@@ -27,12 +27,12 @@
     "redux-observable": "^1.1.0",
     "rxjs": "^6.0.0",
     "tsk-js": "^0.5.1",
-    "watson-api": "^0.2.2",
-    "watson-core": "^0.2.4",
-    "watson-material": "^0.2.2",
-    "watson-modules": "^0.2.2",
-    "watson-navigation": "^0.2.1",
-    "watson-resize": "^0.2.1"
+    "watson-api": "^0.2.3",
+    "watson-core": "^0.2.5",
+    "watson-material": "^0.2.3",
+    "watson-modules": "^0.2.3",
+    "watson-navigation": "^0.2.2",
+    "watson-resize": "^0.2.2"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",

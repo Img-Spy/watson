@@ -12,16 +12,16 @@
   "build": {
     "productName": "Watson",
     "appId": "org.imgspy.watson",
-    "asar": true,
+    "asar": false,
     "asarUnpack": [
       "./assets/plugins",
-      "./assets/js/img-spy.js"
+      "./assets/js/watson.js"
     ],
     "files": [
       "./assets",
       "./fonts",
       "./main.js",
-      "./imgspy.json"
+      "./watson.json"
     ],
     "extraFiles": [
     ],

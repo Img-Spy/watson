@@ -2,11 +2,14 @@ const typescript = require('rollup-plugin-typescript2');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
 const path = require('path');
+
 const pkg = require('./package.json');
 
 const opts = {
     root: __dirname
 }
+
+/////////
 
 module.exports = {
     input: {

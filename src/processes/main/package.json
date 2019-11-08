@@ -20,8 +20,8 @@
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5",
     "rxjs": "^6.5.1",
-    "watson-api": "^0.2.2",
-    "watson-core": "^0.2.4"
+    "watson-api": "^0.2.3",
+    "watson-core": "^0.2.5"
   },
   "devDependencies": {
     "rollup": "^1.10.1",

@@ -7,6 +7,8 @@ import * as path                from "path";
 import { channels,
          ApiRequest,
          SettingsModel,
+         PluginLoader,
+         environment,
          ApiResponse }          from "watson-core";
 
 import { CONFIG }               from "config";
@@ -21,6 +23,13 @@ export class WatsonApi {
 
     constructor() {
         this.windowManager = new WatsonWindowManager(app);
+
+        const pluginsPath = path.join(environment.rootAppPath, "./assets/plugins");
+        const pluginLoader = new PluginLoader(pluginsPath);
+        console.log(`Loading plugin on folder ${pluginsPath}`);
+        pluginLoader.list.forEach((folder) => {
+            console.log(`   * Detected plugin folder: "${folder}"`);
+        });
 
         this.mainCluster = new MainCluster();
         this.mainCluster.start();

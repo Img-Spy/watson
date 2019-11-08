@@ -9,8 +9,6 @@ general enough, all the digital forensic functionalities are implemented through
 plugins. Plugins are intended to extend specific functionalities of software,
 hence, *Watson* without plugins only defines an empty window.
 
-
-
 ### Plugin Interface
 The plugin interface is defined in *watson-core* module and it has three
 read-only fields: info, view and workers. 

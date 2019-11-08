@@ -1031,10 +1031,10 @@ uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
-watson-core@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.2.tgz#4ddc2a6be72850c10574812f91e1ed1d9d9aa921"
-  integrity sha512-8McVAsiUTpUpgCaxy+ob1G75BxHaqcogua2cYedEmRl+UdtdBQI/rjRKs2v9JRmeJdXftPj8v66lfV/VB22jPg==
+watson-core@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.5.tgz#76c81240b0d6ae8df2bc1b267036d3957ec62885"
+  integrity sha512-MEWx6NKFGa6kKVXs8XQlaUvhEHaS34iixYAnTwf1G/o3B+30Tjt0Tjt06AM55BqrWfqqVTTirIabGY9dTO5QGQ==
   dependencies:
     react "^16.8.6"
     react-dom "^16.8.6"
