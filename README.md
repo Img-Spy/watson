@@ -72,9 +72,8 @@ The recommended folder structure for plugins is:
     + **js** Contains the JavaScript distribution files.
 	    + **(plugin name)-view.js** View plugin bundle.
 	    + **(plugin name)-workers.js** Workers plugin bundle.
-	    + **...** Other folders with resources.
-		
-		+ **package.json** A copy of the package json of the plugin. 
+	+ **...** Other folders with resources.
+	+ **package.json** A copy of the package json of the plugin.
 
 + **rollup.config.js** Rollup configuration to create the plugin bundle.
 + **tsconfig.json** TypeScript build configurations.
