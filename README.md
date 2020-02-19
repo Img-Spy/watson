@@ -3,7 +3,7 @@
 results of different techniques from diverse digital forensic branches in order
 to gather advanced evidences.
 
-Special thanks to [ANFORA](#ANFORA)
+Special thanks to [ANFORA](#ANFORA).
 
 ## Plugins
 *Watson* is a generic digital forensic tool so, in order let the application be
@@ -83,7 +83,7 @@ The recommended folder structure for plugins is:
 + **package.json**
 
 
-## ANFORA
+## Acknowledgements
 
-This work has beem financially supported by the MINECO/FEDER funded project 
+This work has been financially supported by the MINECO/FEDER funded project 
 "Análisis Forense Avanzado (ANFORA)" TEC2015-68734-R
