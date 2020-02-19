@@ -3,7 +3,7 @@
 results of different techniques from diverse digital forensic branches in order
 to gather advanced evidences.
 
-Special thanks to [ANFORA](#ANFORA)
+Special thanks to [ANFORA](#ANFORA).
 
 ## Plugins
 *Watson* is a generic digital forensic tool so, in order let the application be
