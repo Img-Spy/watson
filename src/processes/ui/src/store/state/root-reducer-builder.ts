@@ -5,7 +5,6 @@ import { combineReducers,
 import { loadArgs,
          WindowMetadata,
          StartupInfo }              from "watson-core";
-import { api }                      from "watson-api";
 
 import { WatsonState }              from "./watson-state";
 
@@ -34,10 +33,11 @@ function buildPluginReducerMap(windowName: string, info: StartupInfo): ReducersM
 }
 
 export default function rootReducerBuilder(
-    windowName: string
+    windowName: string, initialSettings: any
 ): Reducer<WatsonState>  {
     const args = loadArgs();
-    const info: StartupInfo = { initialSettings: api.loadSettingsSync(), args };
+    console.log("Hello world")
+    const info: StartupInfo = { initialSettings, args };
     const windowReducerMap = buildWindowReducerMap(windowName, info);
     const pluginReducerMap = buildPluginReducerMap(windowName, info);
 

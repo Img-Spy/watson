@@ -3,10 +3,11 @@ import { createStore,
          Store,
          Action,
          Reducer, 
-         compose}              from "redux";
+         compose }              from "redux";
 import { createEpicMiddleware, 
          Epic }                 from "redux-observable";
 
+import { api }                  from "watson-api";
 import { loadArgs }             from "watson-core";
 
 import { WatsonState,
@@ -16,12 +17,13 @@ import { WatsonState,
 
 function storeBuilder<S>(
     name: string,
-    reducerBuilder: (name: string) => Reducer<S>,
-    epicBuilder:    (name: string) => Epic<Action, Action, S, any>,
+    reducerBuilder: (name: string, initialSettings: any) => Reducer<S>,
+    epicBuilder:    (name: string, initialSettings: any) => Epic<Action, Action, S, any>,
     initialState: Partial<S>
 ): Store<Partial<S>> {
-    const epic = epicBuilder(name);
-    const reducer = reducerBuilder(name);
+    const initialSettings = api.loadSettingsSync();
+    const epic = epicBuilder(name, initialSettings);
+    const reducer = reducerBuilder(name, initialSettings);
     const epicMiddleware = createEpicMiddleware<Action, Action, S, any>();
 
     let middleware;

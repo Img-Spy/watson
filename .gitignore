@@ -1,6 +1,7 @@
 # Cache files
 .cache-loader
 .rpt2_cache
+.flatpak-builder
 
 # Node modules
 node_modules

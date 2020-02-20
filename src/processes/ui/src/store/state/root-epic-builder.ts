@@ -5,7 +5,6 @@ import { combineEpics,
 import { loadArgs,
          StartupInfo,
          WindowMetadata }           from "watson-core";
-import { api }                      from "watson-api";
 
 import { WatsonState }              from "./watson-state";
 
@@ -44,10 +43,10 @@ function buildPluginEpics(
 
 
 export default function rootEpicBuilder(
-    name: string
+    name: string, initialSettings: any
 ): Epic<Action, Action, WatsonState, any>  {
     const args = loadArgs();
-    const info: StartupInfo = { initialSettings: api.loadSettingsSync(), args };
+    const info: StartupInfo = { initialSettings, args };
     const epics = [
         ...buildWindowEpics(name, info),
         ...buildPluginEpics(name, info),
