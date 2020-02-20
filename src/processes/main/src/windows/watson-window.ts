@@ -1,8 +1,7 @@
-import * as url_             from "url";
+import * as url_            from "url";
 import * as path            from "path";
 import uuidv1               from "uuid/v1";
-import { BrowserWindow,
-         Menu }             from "electron";
+import { BrowserWindow }    from "electron";
 import { CONFIG }           from "config";
 
 const url = url_;

@@ -1,9 +1,12 @@
+import { Menu }                 from "electron";
+
 import { CONFIG }               from "config";
 
 import { CaseWindow }           from "./case";
 import { CaseSelectorWindow }   from "./case-selector";
 import { SettingsWindow }       from "./settings";
 import { WindowManager }        from "./window-manager";
+import { CASE_MENU }            from "./case";
 
 
 export class WatsonWindowManager extends WindowManager {
@@ -13,6 +16,9 @@ export class WatsonWindowManager extends WindowManager {
         super(app);
 
         this.folder = CONFIG.currentFolder;
+        if(CONFIG.isMacOs) {
+            Menu.setApplicationMenu(CASE_MENU);
+        }
     }
 
     public onReady() {

@@ -9,6 +9,9 @@
   },
   "repository": "https://github.com/Img-Spy/watson",
   "description": "A digital forensics application",
+  "scripts": {
+    "start": "electron ."
+  },
   "build": {
     "productName": "Watson",
     "appId": "org.imgspy.watson",

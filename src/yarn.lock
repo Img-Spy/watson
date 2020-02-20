@@ -4893,35 +4893,20 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-watson-api@^0.2.2, "watson-api@file:./packages/api":
-  version "0.2.2"
+watson-api@^0.2.3, "watson-api@file:./packages/api":
+  version "0.2.3"
   dependencies:
     react "^16.8.6"
     react-redux "^7.0.3"
     redux "^4.0.1"
     rxjs "^6.5.1"
     uuid "^3.3.2"
-    watson-core "^0.2.4"
+    watson-core "^0.2.5"
 
-watson-core@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.2.tgz#4ddc2a6be72850c10574812f91e1ed1d9d9aa921"
-  integrity sha512-8McVAsiUTpUpgCaxy+ob1G75BxHaqcogua2cYedEmRl+UdtdBQI/rjRKs2v9JRmeJdXftPj8v66lfV/VB22jPg==
-  dependencies:
-    react "^16.8.6"
-    react-dom "^16.8.6"
-    react-redux "^7.0.3"
-    react-redux-form "^1.16.13"
-    redux "^4.0.1"
-    redux-actions "^2.6.5"
-    redux-observable "^1.1.0"
-    rxjs "^6.5.1"
-    uuid "^3.3.2"
-
-watson-core@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.4.tgz#86c190acafa95f6e6f18d395104272025f0efe7d"
-  integrity sha512-Z0taKDhDL9pGhJCD4WEN+cXqM40oACVsNmUkBUPcD7Hshh9F7Kglo3t6EJ1HHHly0LMsdZK3wOqLLnxHL7a2tw==
+watson-core@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.5.tgz#76c81240b0d6ae8df2bc1b267036d3957ec62885"
+  integrity sha512-MEWx6NKFGa6kKVXs8XQlaUvhEHaS34iixYAnTwf1G/o3B+30Tjt0Tjt06AM55BqrWfqqVTTirIabGY9dTO5QGQ==
   dependencies:
     react "^16.8.6"
     react-dom "^16.8.6"
@@ -4934,7 +4919,7 @@ watson-core@^0.2.4:
     uuid "^3.3.2"
 
 "watson-core@file:./packages/core":
-  version "0.2.4"
+  version "0.2.5"
   dependencies:
     react "^16.8.6"
     react-dom "^16.8.6"
@@ -4957,19 +4942,19 @@ watson-core@^0.2.4:
     redux "^4.0.1"
     redux-actions "^2.6.5"
     rxjs "^6.5.1"
-    watson-api "^0.2.2"
-    watson-core "^0.2.4"
+    watson-api "^0.2.3"
+    watson-core "^0.2.5"
 
-watson-material@^0.2.2, "watson-material@file:./packages/material":
-  version "0.2.2"
+watson-material@^0.2.3, "watson-material@file:./packages/material":
+  version "0.2.3"
   dependencies:
     react "^16.8.6"
     react-redux "^7.0.3"
     redux "^4.0.1"
-    watson-core "^0.2.4"
+    watson-core "^0.2.5"
 
-watson-modules@^0.2.2, "watson-modules@file:./packages/modules":
-  version "0.2.2"
+watson-modules@^0.2.3, "watson-modules@file:./packages/modules":
+  version "0.2.3"
   dependencies:
     anymatch "^3.0.1"
     immer "^3.1.1"
@@ -4979,18 +4964,18 @@ watson-modules@^0.2.2, "watson-modules@file:./packages/modules":
     redux "^4.0.1"
     redux-observable "^1.1.0"
     rxjs "^6.5.1"
-    watson-api "^0.2.2"
-    watson-core "^0.2.4"
+    watson-api "^0.2.3"
+    watson-core "^0.2.5"
 
-watson-navigation@^0.2.1, "watson-navigation@file:./packages/navigation":
-  version "0.2.1"
+watson-navigation@^0.2.2, "watson-navigation@file:./packages/navigation":
+  version "0.2.2"
   dependencies:
     react "^16.8.6"
     react-redux "^7.0.3"
     redux "^4.0.1"
-    watson-core "^0.2.4"
+    watson-core "^0.2.5"
 
-"watson-plugin-explorer@file:./plugins/explorer":
+watson-plugin-explorer@^0.2.0, "watson-plugin-explorer@file:./plugins/explorer":
   version "0.2.0"
   dependencies:
     "@phosphor/widgets" "^1.9.0"
@@ -5009,12 +4994,12 @@ watson-navigation@^0.2.1, "watson-navigation@file:./packages/navigation":
     redux-observable "^1.1.0"
     rxjs "^6.0.0"
     tsk-js "^0.5.1"
-    watson-api "^0.2.2"
-    watson-core "^0.2.4"
-    watson-material "^0.2.2"
-    watson-modules "^0.2.2"
-    watson-navigation "^0.2.1"
-    watson-resize "^0.2.1"
+    watson-api "^0.2.3"
+    watson-core "^0.2.5"
+    watson-material "^0.2.3"
+    watson-modules "^0.2.3"
+    watson-navigation "^0.2.2"
+    watson-resize "^0.2.2"
 
 "watson-plugin-search@file:./plugins/search":
   version "0.2.0"
@@ -5031,6 +5016,13 @@ watson-navigation@^0.2.1, "watson-navigation@file:./packages/navigation":
     redux-observable "^1.0.0"
     rxjs "^6.0.0"
     tsk-js "^0.5.1"
+    watson-api "^0.2.3"
+    watson-core "^0.2.5"
+    watson-material "^0.2.3"
+    watson-modules "^0.2.3"
+    watson-navigation "^0.2.2"
+    watson-plugin-explorer "^0.2.0"
+    watson-resize "^0.2.2"
 
 "watson-plugin-timeline@file:./plugins/timeline":
   version "0.2.0"
@@ -5046,28 +5038,35 @@ watson-navigation@^0.2.1, "watson-navigation@file:./packages/navigation":
     redux-observable "^1.0.0"
     rxjs "^6.0.0"
     tsk-js "^0.5.1"
+    watson-api "^0.2.3"
+    watson-core "^0.2.5"
+    watson-material "^0.2.3"
+    watson-modules "^0.2.3"
+    watson-navigation "^0.2.2"
+    watson-plugin-explorer "^0.2.0"
+    watson-resize "^0.2.2"
 
-watson-resize@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/watson-resize/-/watson-resize-0.2.1.tgz#098319de7f40ac5ec557809263f358ecfed76405"
-  integrity sha512-Xa2COjfikNnRU6aBiC6dUtiZY1dv/8rKXrIsmPsmTNPhoZsXVtjID7VKanah8Ax46k1Ui1JNfg53oqbxxeFUUA==
+watson-resize@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/watson-resize/-/watson-resize-0.2.2.tgz#4e40c3da50add983d976d682d2cfaf6d18e1da50"
+  integrity sha512-72yK5tgk5zx+uJlgGrdlTS9SFh5pcuiEi8sb6xQDwn1GmV99tiLcrMIlKdSJkb1//CRWoG4r8gGb1F/w3bjjiA==
   dependencies:
     deepcopy "^2.0.0"
     react "^16.8.6"
     react-redux "^7.0.3"
     redux "^4.0.1"
     rxjs "^6.5.1"
-    watson-core "^0.2.2"
+    watson-core "^0.2.5"
 
 "watson-resize@file:./packages/resize":
-  version "0.2.1"
+  version "0.2.2"
   dependencies:
     deepcopy "^2.0.0"
     react "^16.8.6"
     react-redux "^7.0.3"
     redux "^4.0.1"
     rxjs "^6.5.1"
-    watson-core "^0.2.4"
+    watson-core "^0.2.5"
 
 "watson-ui@file:./processes/ui":
   version "0.2.0"
@@ -5087,17 +5086,17 @@ watson-resize@^0.2.1:
     redux "^4.0.1"
     spawn-sync "^2.0.0"
     utf-8-validate "^5.0.2"
-    watson-api "^0.2.2"
-    watson-core "^0.2.4"
-    watson-material "^0.2.2"
-    watson-modules "^0.2.2"
-    watson-navigation "^0.2.1"
-    watson-resize "^0.2.1"
+    watson-api "^0.2.3"
+    watson-core "^0.2.5"
+    watson-material "^0.2.3"
+    watson-modules "^0.2.3"
+    watson-navigation "^0.2.2"
+    watson-resize "^0.2.2"
 
 "watson-workers@file:./processes/workers":
   version "0.2.0"
   dependencies:
-    watson-core "^0.2.4"
+    watson-core "^0.2.5"
 
 wcwidth@^1.0.1:
   version "1.0.1"

@@ -1,3 +1,5 @@
+import { CONFIG }           from "config";
+
 
 export const editMenu: Electron.MenuItemConstructorOptions = {
     label: "Edit",
@@ -15,7 +17,7 @@ export const editMenu: Electron.MenuItemConstructorOptions = {
 };
 
 
-if (process.platform === "darwin") {
+if (CONFIG.isMacOs) {
     (editMenu.submenu as Electron.MenuItemConstructorOptions[]).push(
         { type: "separator" },
         {

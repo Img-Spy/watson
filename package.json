@@ -7,9 +7,11 @@
     "version": "node scripts/version",
     "preinstall": "node scripts/preinstall",
     "postinstall": "node scripts/postinstall",
-    "start": "cross-env NODE_ENV=development ELECTRON_CONNECT=true NODE_OPTIONS=\"--max-old-space-size=4096\" node scripts/start",
+    "dev": "cross-env NODE_ENV=development ELECTRON_CONNECT=true NODE_OPTIONS=\"--max-old-space-size=4096\" node scripts/start",
+    "start": "cross-env NODE_ENV=development ELECTRON_CONNECT=false NODE_OPTIONS=\"--max-old-space-size=4096\" yarn --cwd dist start",
     "dist-linux": "electron-builder build --linux --project ./dist",
-    "dist-win": "electron-builder build --win --project ./dist"
+    "dist-win": "electron-builder build --win --project ./dist",
+    "dist-mac": "electron-builder build --mac --project ./dist"
   },
   "license": "MIT",
   "repository": "https://github.com/Img-Spy/watson",
