@@ -54,7 +54,6 @@ For information about the GUI and the plugin management go to our
 
 We are currently working on:
 
-* Plugin manager to easily add custom plugins.
 * Add more plugins for network packet analysis and integrate fingerprint techniques.
 * Improve compatibility with MacOS.
 
