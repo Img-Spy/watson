@@ -36,7 +36,7 @@ Download and execute *Watson.0.2.0.msi* or *Watson.Setup.0.2.0.exe*.
 
 You can download and extract the .tar.gz file and execute watson binary. If
 you are using a x64 debian-based distribution, you can install it using the .deb
-package
+package:
 
 ```bash
 dpkg -i watson_0.2.0_amd64.deb
