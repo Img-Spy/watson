@@ -6,8 +6,22 @@ to gather advanced evidences.
 Special thanks to [ANFORA](#ANFORA).
 
 
+## Development
+
+In order to execute the application in development mode just run:
+
+```bash
+npx yarn
+npx yarn dev
+```
+
+## Installation
+
+
+
 ## Wiki
-For information about the GUI and the plugin management go to our [wiki](https://github.com/Img-Spy/watson/wiki).
+For information about the GUI and the plugin management go to our
+[wiki](https://github.com/Img-Spy/watson/wiki).
 
 ## Future work
 
