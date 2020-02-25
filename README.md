@@ -30,7 +30,7 @@ You can find any required file [here](https://github.com/Img-Spy/watson/releases
 
 ### Windows
 
-
+Download and execute *Watson.0.2.0.msi* or *Watson.Setup.0.2.0.exe*.
 
 ### Linux
 
