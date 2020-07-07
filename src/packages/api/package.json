@@ -20,7 +20,7 @@
     "watson-core": "^0.2.5"
   },
   "devDependencies": {
-    "electron": "^4.2.9",
+    "electron": "^7.2.4",
     "rollup": "^1.10.1",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^4.2.3",
