@@ -21,7 +21,7 @@
     "watson-workers": "file:./processes/workers"
   },
   "devDependencies": {
-    "electron": "^4.2.9",
+    "electron": "^7.2.4",
     "electron-rebuild": "^1.8.6",
     "rollup": "^1.10.1",
     "rollup-plugin-commonjs": "^9.3.4",
