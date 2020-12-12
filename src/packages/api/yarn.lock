@@ -617,9 +617,9 @@ inherits@^2.0.3, inherits@~2.0.1, inherits@~2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 invariant@^2.2.4, invariant@~2.2.1:
   version "2.2.4"
@@ -1886,10 +1886,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-watson-core@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.4.tgz#86c190acafa95f6e6f18d395104272025f0efe7d"
-  integrity sha512-Z0taKDhDL9pGhJCD4WEN+cXqM40oACVsNmUkBUPcD7Hshh9F7Kglo3t6EJ1HHHly0LMsdZK3wOqLLnxHL7a2tw==
+watson-core@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.5.tgz#76c81240b0d6ae8df2bc1b267036d3957ec62885"
+  integrity sha512-MEWx6NKFGa6kKVXs8XQlaUvhEHaS34iixYAnTwf1G/o3B+30Tjt0Tjt06AM55BqrWfqqVTTirIabGY9dTO5QGQ==
   dependencies:
     react "^16.8.6"
     react-dom "^16.8.6"
