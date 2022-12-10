@@ -1183,9 +1183,9 @@ punycode@^2.1.0:
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 rc@^1.2.1:
   version "1.2.8"
@@ -1886,10 +1886,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-watson-core@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.4.tgz#86c190acafa95f6e6f18d395104272025f0efe7d"
-  integrity sha512-Z0taKDhDL9pGhJCD4WEN+cXqM40oACVsNmUkBUPcD7Hshh9F7Kglo3t6EJ1HHHly0LMsdZK3wOqLLnxHL7a2tw==
+watson-core@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/watson-core/-/watson-core-0.2.5.tgz#76c81240b0d6ae8df2bc1b267036d3957ec62885"
+  integrity sha512-MEWx6NKFGa6kKVXs8XQlaUvhEHaS34iixYAnTwf1G/o3B+30Tjt0Tjt06AM55BqrWfqqVTTirIabGY9dTO5QGQ==
   dependencies:
     react "^16.8.6"
     react-dom "^16.8.6"
